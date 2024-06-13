@@ -2,7 +2,14 @@
 export default {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
-    extend: {}
+    extend: {
+      colors: {
+        beige: '#FFEAAE'
+      },
+      fontFamily: {
+        philosopher: ['Philosopher', 'sans-serif']
+      }
+    }
   },
   plugins: []
 }

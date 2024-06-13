@@ -1,0 +1,24 @@
+<script setup lang="ts">
+import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { locale } = useI18n()
+
+const isChecked = locale.value === 'en' ? ref(true) : ref(false)
+
+const changeLang = () => {
+  isChecked.value = !isChecked.value
+  locale.value = isChecked.value ? 'en' : 'fr'
+}
+</script>
+
+<template>
+  <div class="absolute top-5 right-5">
+    <button @click="changeLang" class="active:scale-90 transition-all duration-200 ease-in-out">
+      <img
+        :src="isChecked ? 'src/assets/uk2.svg' : 'src/assets/france2.svg'"
+        class="w-12 h-8 border border-white"
+      />
+    </button>
+  </div>
+</template>
