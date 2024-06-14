@@ -51,7 +51,12 @@ const writeText = (lang: string) => {
     <hr class="block w-full border border-beige my-8" />
     <div class="text-center text-beige text-sm md:text-base" id="subtitle">
       {{ subtitleText }}
-      <a id="underline" class="text-white" href="https://www.u-bordeaux.fr/"
+      <a
+        id="underline"
+        class="text-white"
+        href="https://www.u-bordeaux.fr/"
+        target="_blank"
+        rel="noopener noreferrer"
         >Université de Bordeaux</a
       >, France.
     </div>
@@ -74,34 +79,3 @@ const writeText = (lang: string) => {
   </div>
   <Navbar :language="language" />
 </template>
-
-<style scoped>
-/* Style for the underline effect */
-#underline,
-#underline:after,
-#underline:before {
-  transition: all 0.5s;
-}
-
-#underline {
-  position: relative;
-  display: inline-block;
-}
-
-#underline:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: rgb(255, 255, 255);
-  height: 1px;
-}
-
-#underline:hover:after {
-  width: 100%;
-}
-</style>
