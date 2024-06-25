@@ -17,7 +17,7 @@ const changeLang = () => {
     <button @click="changeLang" class="active:scale-90 transition-all duration-200 ease-in-out">
       <img
         :src="isChecked ? 'src/assets/uk2.svg' : 'src/assets/france2.svg'"
-        class="w-12 h-8 border border-white"
+        class="w-12 h-8 hover:opacity-80 border border-white"
       />
     </button>
   </div>

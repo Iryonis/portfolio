@@ -6,7 +6,7 @@ const route = useRoute()
 </script>
 
 <template>
-  <div class="flex flex-col justify-center items-center">
+  <div class="min-w-screen min-h-screen flex flex-col justify-center items-center">
     <LangToggle :class="{ hidden: route.name === 'home' }" /> <RouterView />
   </div>
 </template>

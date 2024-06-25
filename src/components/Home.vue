@@ -77,5 +77,5 @@ const writeText = (lang: string) => {
       </button>
     </div>
   </div>
-  <Navbar :language="language" />
+  <Navbar next="/about" />
 </template>

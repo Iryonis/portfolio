@@ -1,14 +1,16 @@
 export default {
   en: 'Anglais',
   fr: 'Français',
+  home: 'Accueil',
   about: 'À propos',
-  projects: 'Mes projets',
-  links: 'Mes liens',
+  projects: 'Projets',
+  links: 'Liens',
   about_text:
     "Je suis Guilhem BONNEFOUS, actuellement étudiant en master d'Informatique à l'Université de Bordeaux. Sur mon temps libre, j'aime lire, jouer, et coder. J'aime particulièrement le développement web et la découverte de nouvelles technologies.",
   about_text2:
     ' Ce site va vous permettre de découvrir mes différents projets, mes compétences ainsi que les liens vers mes différents réseaux sociaux.',
   skills: 'Compétences',
+  tools: 'Outils',
   career: 'Parcours',
   colon: ' :',
   2021: {
@@ -26,5 +28,10 @@ export default {
     2: "Job étudiant à temps partiel tout au long de l'année pour continuer le site commencé durant le stage de 2022 au LaBRI",
     3: 'Participation à la '
   },
-  '2024': 'Première année de master en informatique... (en cours)'
+  '2024': 'Première année de master en informatique... (en cours)',
+  master: 'Maîtrise',
+  advanced: 'Avancé',
+  intermediate: 'Intermédiaire',
+  beginner: 'Débutant',
+  novice: 'Novice'
 }
