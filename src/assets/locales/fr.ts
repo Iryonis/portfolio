@@ -33,5 +33,7 @@ export default {
   advanced: 'Avancé',
   intermediate: 'Intermédiaire',
   beginner: 'Débutant',
-  novice: 'Novice'
+  novice: 'Novice',
+  project_more: 'En savoir plus sur Github',
+  project_site: 'Voir le site'
 }

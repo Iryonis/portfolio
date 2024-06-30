@@ -4,7 +4,7 @@ import SkillsBar from './SkillsBar.vue'
 
 <template>
   <div class="border border-beige shadow-lg shadow-black/70 bg-white/10">
-    <div class="m-4">
+    <div class="m-4 md:m-8">
       <div class="text-white font-bold text-xl my-4 uppercase">{{ $t('skills') }}</div>
       <SkillsBar text="HTML" :value="95" />
       <SkillsBar text="CSS" :value="35" />
@@ -18,8 +18,8 @@ import SkillsBar from './SkillsBar.vue'
       <SkillsBar text="C" :value="65" />
       <SkillsBar text="OCaml" :value="45" />
       <SkillsBar text="Java" :value="19" />
-      <hr class="my-4 border border-beige border-1" />
-      <div class="text-white font-bold text-xl my-4 uppercase">{{ $t('tools') }}</div>
+      <hr class="my-8 border border-beige border-1" />
+      <div class="text-white font-bold text-xl mb-4 mt-8 uppercase">{{ $t('tools') }}</div>
       <SkillsBar text="VSCode" :value="90" />
       <SkillsBar text="Git" :value="65" />
       <SkillsBar text="Node.js" :value="65" />

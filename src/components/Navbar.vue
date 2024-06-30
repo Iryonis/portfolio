@@ -9,48 +9,45 @@ defineProps({
 })
 
 const route = useRoute()
+
+/**
+ * Change the style of the links depending on the current route
+ *
+ * @param {string} path - The path to compare with the current route
+ */
+const styleCurrentRoute = (path: string) => {
+  return route.name === path ? 'uppercase text-beige border-beige' : 'border-transparent'
+}
 </script>
 
 <template>
   <nav>
     <div class="grid grid-cols-4 sm:grid-cols-7 items-center text-center text-white">
       <RouterLink
-        to="/"
+        :to="{ name: 'home' }"
         class="p-0.5 sm:p-1 md:p-2 md:px-4 text-sm sm:text-base border hover:border-beige rounded-l-lg"
-        :class="{
-          'uppercase text-beige border-beige': route.name === 'home',
-          'border-transparent': route.name !== 'home'
-        }"
+        :class="styleCurrentRoute('home')"
         >{{ $t('home') }}</RouterLink
       >
       <hr class="hidden sm:block border-beige border" />
       <RouterLink
-        to="/about"
+        :to="{ name: 'about' }"
         class="p-0.5 sm:p-1 md:p-2 md:px-4 text-sm sm:text-base border hover:border-beige"
-        :class="{
-          'uppercase text-beige border-beige': route.name === 'about',
-          'border-transparent': route.name !== 'about'
-        }"
+        :class="styleCurrentRoute('about')"
         >{{ $t('about') }}</RouterLink
       >
       <hr class="hidden sm:block border-beige border" />
       <RouterLink
-        to=""
+        :to="{ name: 'projects' }"
         class="p-0.5 sm:p-1 md:p-2 md:px-4 text-sm sm:text-base border hover:border-beige"
-        :class="{
-          'uppercase text-beige border-beige': route.name === 'projects',
-          'border-transparent': route.name !== 'projects'
-        }"
+        :class="styleCurrentRoute('projects')"
         >{{ $t('projects') }}</RouterLink
       >
       <hr class="hidden sm:block border-beige border" />
       <RouterLink
-        to=""
+        :to="{ name: 'links' }"
         class="p-0.5 sm:p-1 md:p-2 md:px-4 text-sm sm:text-base border hover:border-beige rounded-r-lg"
-        :class="{
-          'uppercase text-beige border-beige': route.name === 'links',
-          'border-transparent': route.name !== 'links'
-        }"
+        :class="styleCurrentRoute('links')"
         >{{ $t('links') }}</RouterLink
       >
     </div>

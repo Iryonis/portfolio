@@ -1,8 +1,27 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref } from 'vue'
+import { onMounted, onUnmounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
+const route = useRoute()
+
 const sidebar = ref<HTMLElement | null>(null)
+
+// Refs for the absolute elements
+const about = ref<HTMLElement | null>(null)
+const projects = ref<HTMLElement | null>(null)
+const links = ref<HTMLElement | null>(null)
+
+const refs = [about, projects, links]
+
+/**
+ * Watch the route path and reset the height of the absolute elements when it changes
+ */
+watch(
+  () => route.path,
+  () => {
+    resetHeight()
+  }
+)
 
 /**
  * Handle the sidebar animation on scroll -> it will follow the scroll within defined limits
@@ -10,19 +29,52 @@ const sidebar = ref<HTMLElement | null>(null)
 const handleScroll = () => {
   if (!sidebar.value) return
 
-  const scrollHeight = document.documentElement.scrollHeight - window.innerHeight
+  const scrollHeight = document.documentElement.scrollHeight - window.innerHeight // Height of the scrollable area
   const scrollRatio = window.scrollY / scrollHeight
 
-  const sidebarHeight = sidebar.value.offsetHeight
+  const sidebarHeight = sidebar.value.offsetHeight // Height of the sidebar
 
-  const availableHeight = window.innerHeight - sidebarHeight
+  const maxTranslateY = (window.innerHeight - sidebarHeight) * 0.5 // Max y position for the top of the sidebar
 
-  const maxTranslateY = availableHeight * 0.5 // Max y position for the top of the sidebar
-
-  let translateY = maxTranslateY * scrollRatio
-  translateY = Math.min(translateY, maxTranslateY)
+  let translateY = Math.min(maxTranslateY * scrollRatio, maxTranslateY)
 
   sidebar.value.style.transform = `translateY(${translateY}px)`
+
+  heightAbsoluteElements(scrollRatio)
+}
+
+/**
+ * Change the height of the absolute elements to reflect the scroll position
+ *
+ * @param {number} scrollRatio - The ratio of the scroll position
+ */
+const heightAbsoluteElements = (scrollRatio: number) => {
+  refs.forEach((ref) => {
+    if (ref.value?.parentElement?.classList.contains('uppercase')) {
+      const newHeight = ref.value.parentElement.clientHeight * scrollRatio
+      ref.value.style.height = `${newHeight}px`
+    }
+  })
+}
+
+/**
+ * Reset the height of the absolute elements
+ */
+const resetHeight = () => {
+  refs.forEach((ref) => {
+    if (ref.value?.style) {
+      ref.value.style.height = '0px'
+    }
+  })
+}
+
+/**
+ * Change the style of the links depending on the current route
+ *
+ * @param {string} path - The path to compare with the current route
+ */
+const styleCurrentRoute = (path: string) => {
+  return route.name === path ? 'uppercase text-beige border-beige' : 'border-transparent'
 }
 
 onMounted(() => {
@@ -32,8 +84,6 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
 })
-
-const route = useRoute()
 </script>
 
 <template>
@@ -42,41 +92,37 @@ const route = useRoute()
       <div class="flex flex-row w-full mx-auto">
         <div class="grid grid-rows-7 items-center text-center text-white">
           <RouterLink
-            to="/"
-            class="p-2 pb-[27.5px] border border-transparent hover:border-beige rounded-t-lg transition-all duration-200 ease-out active:scale-90"
-            >{{ $t('home') }}</RouterLink
+            :to="{ name: 'home' }"
+            class="p-2 pb-7 border border-transparent hover:border-beige rounded-t-lg transition-all duration-200 ease-out active:scale-90"
+          >
+            {{ $t('home') }}</RouterLink
           >
           <div class="border-r border-r-beige w-1/2 h-full flex-1 self-start"></div>
           <RouterLink
-            to="/about"
-            class="p-2 py-[27.5px] border hover:border-beige transition-all duration-200 ease-out active:scale-90"
-            :class="{
-              'uppercase text-beige border-beige': route.name === 'about',
-              'border-transparent': route.name !== 'about'
-            }"
+            :to="{ name: 'about' }"
+            class="relative p-2 py-7 border hover:border-beige transition-all duration-200 ease-out active:scale-90"
+            :class="styleCurrentRoute('about')"
           >
-            {{ $t('about') }}
+            <div ref="about" class="absolute top-0 left-0 w-full bg-black/50"></div>
+            <span class="relative z-10">{{ $t('about') }}</span>
           </RouterLink>
           <div class="border-r border-r-beige w-1/2 h-full flex-1 self-start"></div>
           <RouterLink
-            to=""
-            class="p-2 py-[27.5px] border hover:border-beige transition-all duration-200 ease-out active:scale-90"
-            :class="{
-              'uppercase text-beige border-beige': route.name === 'projects',
-              'border-transparent': route.name !== 'projects'
-            }"
-            >{{ $t('projects') }}</RouterLink
+            :to="{ name: 'projects' }"
+            class="relative p-2 py-7 border hover:border-beige transition-all duration-200 ease-out active:scale-90"
+            :class="styleCurrentRoute('projects')"
           >
+            <div ref="projects" class="absolute top-0 left-0 w-full bg-black/50"></div>
+            <span class="relative z-10">{{ $t('projects') }}</span>
+          </RouterLink>
           <div class="border-r border-r-beige w-1/2 h-full flex-1 self-start"></div>
           <RouterLink
-            to=""
-            class="p-2 py-[27.5px] border hover:border-beige rounded-b-lg transition-all duration-200 ease-out active:scale-90"
-            :class="{
-              'uppercase text-beige border-beige': route.name === 'links',
-              'border-transparent': route.name !== 'links'
-            }"
-            >{{ $t('links') }}</RouterLink
-          >
+            :to="{ name: 'links' }"
+            class="relative p-2 pt-7 border hover:border-beige rounded-b-lg transition-all duration-200 ease-out active:scale-90"
+            :class="styleCurrentRoute('links')"
+            ><div ref="links" class="absolute top-0 left-0 w-full bg-black/50"></div>
+            <span class="relative z-10">{{ $t('links') }}</span>
+          </RouterLink>
         </div>
         <!-- SVG drawing -> not responsive -->
         <div class="inline-block relative w-16 align-middle overflow-hidden">

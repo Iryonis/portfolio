@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { defineProps, ref } from 'vue'
+import { ref } from 'vue'
 
 const props = defineProps({
   text: {
@@ -35,7 +35,7 @@ if (value >= 90) {
 </script>
 
 <template>
-  <div class="text-md text-beige">
+  <div class="text-md text-white">
     <p class="font-semibold mb-1 mt-2">{{ text }}</p>
     <div class="w-full border border-white rounded-lg">
       <div
