@@ -70,20 +70,26 @@ const props = defineProps({
     </div>
     <!-- Card -->
     <div
-      class="flex flex-col justify-center items-center w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white rounded border border-slate-200 shadow"
+      class="flex flex-col w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white/5 border-beige rounded border-2 shadow-lg shadow-black/50"
     >
-      <img
-        src="https://media.istockphoto.com/id/464988959/fr/photo/canard-colvert-avec-un-trac%C3%A9-de-d%C3%A9tourage.jpg?s=612x612&w=0&k=20&c=7jIz55AINALYzgbugWKu8CEjf6qRPuOZVQBmW0WQ-KA="
-      />
+      <div class="flex justify-center items-center w-full bg-beige">
+        <img :src="'src/assets/img/' + image" />
+      </div>
+
       <div class="p-4">
-        <div class="flex items-center justify-between space-x-2 mb-1">
-          <div class="font-bold text-slate-900">{{ title }}</div>
-          <time class="font-caveat font-medium text-indigo-500">{{ date }}</time>
+        <div class="flex items-center justify-between space-x-2">
+          <div class="text-xl underline font-bold text-yellow-500">{{ title }}</div>
+          <time class="font-caveat font-medium text-orange-500">{{ date }}</time>
         </div>
-        <div class="text-slate-500">
+        <div class="text-beige my-4">
           {{ description }}
         </div>
-        <a href="" class="text-yellow-500 inline mr-8 hover:underline">
+        <a
+          :href="link"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-white inline mr-8 hover:underline"
+        >
           {{ $t('project_more') }}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +107,13 @@ const props = defineProps({
             />
           </svg>
         </a>
-        <a href="" class="text-yellow-500 inline hover:underline" :class="{ hidden: !site }">
+        <a
+          :href="site"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-white inline hover:underline"
+          :class="{ hidden: !site }"
+        >
           {{ $t('project_site') }}
           <svg
             xmlns="http://www.w3.org/2000/svg"

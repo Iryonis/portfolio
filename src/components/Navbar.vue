@@ -27,28 +27,28 @@ const styleCurrentRoute = (path: string) => {
         :to="{ name: 'home' }"
         class="p-0.5 sm:p-1 md:p-2 md:px-4 text-sm sm:text-base border hover:border-beige rounded-l-lg"
         :class="styleCurrentRoute('home')"
-        >{{ $t('home') }}</RouterLink
+        >{{ $t('home_link') }}</RouterLink
       >
       <hr class="hidden sm:block border-beige border" />
       <RouterLink
         :to="{ name: 'about' }"
         class="p-0.5 sm:p-1 md:p-2 md:px-4 text-sm sm:text-base border hover:border-beige"
         :class="styleCurrentRoute('about')"
-        >{{ $t('about') }}</RouterLink
+        >{{ $t('about_link') }}</RouterLink
       >
       <hr class="hidden sm:block border-beige border" />
       <RouterLink
         :to="{ name: 'projects' }"
         class="p-0.5 sm:p-1 md:p-2 md:px-4 text-sm sm:text-base border hover:border-beige"
         :class="styleCurrentRoute('projects')"
-        >{{ $t('projects') }}</RouterLink
+        >{{ $t('projects_link') }}</RouterLink
       >
       <hr class="hidden sm:block border-beige border" />
       <RouterLink
         :to="{ name: 'links' }"
         class="p-0.5 sm:p-1 md:p-2 md:px-4 text-sm sm:text-base border hover:border-beige rounded-r-lg"
         :class="styleCurrentRoute('links')"
-        >{{ $t('links') }}</RouterLink
+        >{{ $t('links_link') }}</RouterLink
       >
     </div>
 

@@ -1,10 +1,10 @@
 export default {
   en: 'Anglais',
   fr: 'Français',
-  home: 'Accueil',
-  about: 'À propos',
-  projects: 'Projets',
-  links: 'Liens',
+  home_link: 'Accueil',
+  about_link: 'À propos',
+  projects_link: 'Projets',
+  links_link: 'Liens',
   about_text:
     "Je suis Guilhem BONNEFOUS, actuellement étudiant en master d'Informatique à l'Université de Bordeaux. Sur mon temps libre, j'aime lire, jouer, et coder. J'aime particulièrement le développement web et la découverte de nouvelles technologies.",
   about_text2:
@@ -35,5 +35,25 @@ export default {
   beginner: 'Débutant',
   novice: 'Novice',
   project_more: 'En savoir plus sur Github',
-  project_site: 'Voir le site'
+  project_site: 'Voir le site',
+  projects: [
+    {
+      title: 'NDI2023',
+      date: '7 et 8 décembre 2023',
+      image: 'NDI2023.png',
+      description:
+        'Site web réalisé pour la Nuit de l\'Info 2023, par l\'équipe "Gragas 404 Not Found". Le sujet était "Faire face au changement climatique : le vrai du faux", et était parrainé par l\'association Réseau Action Climat.',
+      link: 'https://github.com/Roirtur/NDI2023',
+      site: 'https://roirtur.github.io/NDI2023/'
+    },
+    {
+      title: 'NDI2024',
+      date: '7 et 8 décembre 2024',
+      image: 'NDI2023.png',
+      description:
+        'Site web réalisé pour la Nuit de l\'Info 2024, par l\'équipe "Gragas 404 Not Found". Le sujet était "Faire face au changement climatique : le vrai du faux", et était parrainé par l\'association Réseau Action Climat.',
+      link: '',
+      site: ''
+    }
+  ]
 }
