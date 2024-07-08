@@ -38,6 +38,24 @@ export default {
   project_site: 'Voir le site',
   projects: [
     {
+      title: 'VideoTracker',
+      date: 'Avril 2022',
+      image: 'Videotracker.png',
+      description:
+        "Videotracker est un projet Python développé par deux étudiants lors de leur première année d'études en informatique. Il respecte un ensemble de spécifications incluant des exigences telles que l'affichage de vidéo, la pause, la navigation image par image, le dessin de points sur la vidéo et la création d'un fichier CSV pour montrer l'évolution de ces points. Le projet a été réalisé en suivant les méthodologies SCRUM, visant à familiariser les étudiants avec les principes de gestion de projet agile.",
+      link: 'https://github.com/Iryonis/videotracker',
+      site: ''
+    },
+    {
+      title: 'Wiki For Honor',
+      date: 'Décembre 2022',
+      image: 'WikiFH.png',
+      description:
+        "WikiFH (pour 'Wiki For Honor') est un site web créé par un étudiant en informatique durant sa deuxième année à l'université. C'était un petit projet visant à enseigner aux étudiants comment créer un site web avec des technologies de base telles que HTML, CSS, Javascript et PHP. J'ai décidé de créer un site web en l'honneur (je plaisante) de For Honor, un jeu créé par Ubisoft, que j'aime beaucoup. Sa réalisation est très basique, mais c'était le premier site web sérieux que j'ai réalisé.",
+      link: 'https://github.com/Iryonis/wikiFH',
+      site: 'https://guilhem-bonnefous.emi.u-bordeaux.fr/Reseau/index.html'
+    },
+    {
       title: 'NDI2023',
       date: '7 et 8 décembre 2023',
       image: 'NDI2023.png',
@@ -47,13 +65,13 @@ export default {
       site: 'https://roirtur.github.io/NDI2023/'
     },
     {
-      title: 'NDI2024',
-      date: '7 et 8 décembre 2024',
-      image: 'NDI2023.png',
+      title: 'Wiki For Honor',
+      date: 'Décembre 2022',
+      image: 'WikiFH.png',
       description:
-        'Site web réalisé pour la Nuit de l\'Info 2024, par l\'équipe "Gragas 404 Not Found". Le sujet était "Faire face au changement climatique : le vrai du faux", et était parrainé par l\'association Réseau Action Climat.',
-      link: '',
-      site: ''
+        "WikiFH (pour 'Wiki For Honor') est un site web créé par un étudiant en informatique durant sa deuxième année à l'université. C'était un petit projet visant à enseigner aux étudiants comment créer un site web avec des technologies de base telles que HTML, CSS, Javascript et PHP. J'ai décidé de créer un site web en l'honneur (je plaisante) de For Honor, un jeu créé par Ubisoft, que j'aime beaucoup. Sa réalisation est très basique, mais c'était le premier site web sérieux que j'ai réalisé.",
+      link: 'https://github.com/Iryonis/wikiFH',
+      site: 'https://guilhem-bonnefous.emi.u-bordeaux.fr/Reseau/index.html'
     }
   ]
 }

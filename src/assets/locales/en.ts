@@ -38,22 +38,31 @@ export default {
   project_site: 'View the site',
   projects: [
     {
+      title: 'VideoTracker',
+      date: 'April 2022',
+      image: 'Videotracker.png',
+      description:
+        'Videotracker is a Python project developed by two students in their first year of computer science studies. It adheres to a set of specifications that include requirements such as video display, pausing, frame-by-frame navigation, drawing points on the video, and creating a CSV file to show the evolution of these points. The project was executed following SCRUM methodologies, aiming to familiarize the students with agile project management principles.',
+      link: 'https://github.com/Iryonis/videotracker',
+      site: ''
+    },
+    {
+      title: 'Wiki For Honor',
+      date: 'December 2022',
+      image: 'WikiFH.png',
+      description:
+        "WikiFH (pour 'Wiki For Honor') est un site web créé par un étudiant en informatique durant sa deuxième année à l'université. C'était un petit projet visant à enseigner aux étudiants comment créer un site web avec des technologies de base telles que HTML, CSS, Javascript et PHP. J'ai décidé de créer un site web en l'honneur (je plaisante) de For Honor, un jeu créé par Ubisoft, que j'aime beaucoup. Sa réalisation est très basique, mais c'était le premier site web sérieux que j'ai réalisé.",
+      link: 'https://github.com/Iryonis/wikiFH',
+      site: 'https://guilhem-bonnefous.emi.u-bordeaux.fr/Reseau/index.html'
+    },
+    {
       title: 'NDI2023',
       date: '7 and 8 décember 2023',
       image: 'NDI2023.png',
       description:
-        'Site web réalisé pour la Nuit de l\'Info 2023, par l\'équipe "Gragas 404 Not Found". Le sujet était "Faire face au changement climatique : le vrai du faux", et était parrainé par l\'association Réseau Action Climat.',
+        "WikiFH (for 'Wiki For Honor') is a website created by a computer science student during his second year at the university. It was a small project aimed at teaching students how to create a website using vanilla technologies such as HTML, CSS, JavaScript, and PHP. I decided to create a website in honor (just kidding) of the game For Honor, by Ubisoft, a game I really enjoy. Its realization is very basic, but it was the first serious website I made.",
       link: 'https://github.com/Roirtur/NDI2023',
       site: 'https://roirtur.github.io/NDI2023/'
-    },
-    {
-      title: 'NDI2024',
-      date: '7 and 8 décember 2024',
-      image: 'NDI2023.png',
-      description:
-        'Site web réalisé pour la Nuit de l\'Info 2024, par l\'équipe "Gragas 404 Not Found". Le sujet était "Faire face au changement climatique : le vrai du faux", et était parrainé par l\'association Réseau Action Climat.',
-      link: '',
-      site: ''
     }
   ]
 }

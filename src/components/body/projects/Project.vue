@@ -72,9 +72,23 @@ const props = defineProps({
     <div
       class="flex flex-col w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white/5 border-beige rounded border-2 shadow-lg shadow-black/50"
     >
-      <div class="flex justify-center items-center w-full bg-beige">
-        <img :src="'src/assets/img/' + image" />
-      </div>
+      <a
+        :href="site"
+        target="_blank"
+        rel="noopener noreferrer"
+        :title="site ? 'Link to the project site' : ''"
+        :aria-label="site ? 'Link to the project site' : ''"
+        class="flex justify-center items-center w-full bg-beige"
+      >
+        <img
+          :src="'src/assets/img/' + image"
+          aria-label="Project image"
+          :class="{
+            'hover:scale-90 transition-all duration-500 ease-in-out': site,
+            'cursor-default': !site
+          }"
+        />
+      </a>
 
       <div class="p-4">
         <div class="flex items-center justify-between space-x-2">
