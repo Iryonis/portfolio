@@ -13,11 +13,11 @@ const changeLang = () => {
 </script>
 
 <template>
-  <div class="absolute top-5 right-5">
+  <div class="fixed z-50 top-5 right-5">
     <button @click="changeLang" class="active:scale-90 transition-all duration-200 ease-in-out">
       <img
         :src="isChecked ? 'src/assets/uk2.svg' : 'src/assets/france2.svg'"
-        class="w-12 h-8 hover:opacity-80 border border-white"
+        class="w-12 h-8 hover:opacity-90 border border-white"
       />
     </button>
   </div>

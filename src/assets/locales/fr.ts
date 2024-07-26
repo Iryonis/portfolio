@@ -43,8 +43,12 @@ export default {
       image: 'Videotracker.png',
       description:
         "Videotracker est un projet Python développé par deux étudiants lors de leur première année d'études en informatique. Il respecte un ensemble de spécifications incluant des exigences telles que l'affichage de vidéo, la pause, la navigation image par image, le dessin de points sur la vidéo et la création d'un fichier CSV pour montrer l'évolution de ces points. Le projet a été réalisé en suivant les méthodologies SCRUM, visant à familiariser les étudiants avec les principes de gestion de projet agile.",
-      link: 'https://github.com/Iryonis/videotracker',
-      site: ''
+      github: 'https://github.com/Iryonis/videotracker',
+      site: '',
+      type: 'Application de bureau',
+      tool: 'Python',
+      lang: 'En français',
+      access: 'Pas accessible'
     },
     {
       title: 'Wiki For Honor',
@@ -52,8 +56,12 @@ export default {
       image: 'WikiFH.png',
       description:
         "WikiFH (pour 'Wiki For Honor') est un site web créé par un étudiant en informatique durant sa deuxième année à l'université. C'était un petit projet visant à enseigner aux étudiants comment créer un site web avec des technologies de base telles que HTML, CSS, Javascript et PHP. J'ai décidé de créer un site web en l'honneur (je plaisante) de For Honor, un jeu créé par Ubisoft, que j'aime beaucoup. Sa réalisation est très basique, mais c'était le premier site web sérieux que j'ai réalisé.",
-      link: 'https://github.com/Iryonis/wikiFH',
-      site: 'https://guilhem-bonnefous.emi.u-bordeaux.fr/Reseau/index.html'
+      github: 'https://github.com/Iryonis/wikiFH',
+      site: 'https://guilhem-bonnefous.emi.u-bordeaux.fr/Reseau/index.html',
+      type: 'Site web',
+      tool: 'Langages web basiques (HTML, CSS, JavaScript, PHP)',
+      lang: 'En français',
+      access: 'Pas accessible'
     },
     {
       title: 'NDI2023',
@@ -61,17 +69,25 @@ export default {
       image: 'NDI2023.png',
       description:
         'Site web réalisé pour la Nuit de l\'Info 2023, par l\'équipe "Gragas 404 Not Found". Le sujet était "Faire face au changement climatique : le vrai du faux", et était parrainé par l\'association Réseau Action Climat.',
-      link: 'https://github.com/Roirtur/NDI2023',
-      site: 'https://roirtur.github.io/NDI2023/'
+      github: 'https://github.com/Roirtur/NDI2023',
+      site: 'https://roirtur.github.io/NDI2023/',
+      type: 'Site web',
+      tool: 'Angular',
+      lang: 'En français',
+      access: 'Pas accessible'
     },
     {
-      title: 'Wiki For Honor',
-      date: 'Décembre 2022',
-      image: 'WikiFH.png',
+      title: 'UBGarden',
+      date: 'Mai à Juin 2023',
+      image: 'UBGarden.png',
       description:
-        "WikiFH (pour 'Wiki For Honor') est un site web créé par un étudiant en informatique durant sa deuxième année à l'université. C'était un petit projet visant à enseigner aux étudiants comment créer un site web avec des technologies de base telles que HTML, CSS, Javascript et PHP. J'ai décidé de créer un site web en l'honneur (je plaisante) de For Honor, un jeu créé par Ubisoft, que j'aime beaucoup. Sa réalisation est très basique, mais c'était le premier site web sérieux que j'ai réalisé.",
-      link: 'https://github.com/Iryonis/wikiFH',
-      site: 'https://guilhem-bonnefous.emi.u-bordeaux.fr/Reseau/index.html'
+        "UBGarden est un projet Java réalisé en deuxième année d'informatique à l'Université de Bordeaux, lors de l'Unité d'Enseignement (UE) Programmation Orientée Objet. Il consiste à créer un petit jeu vidéo 2D type \"Zelda\", à partir d'un code de base fourni. Il est précédé de plusieurs semaines de tutoriaux pour apprendre à développer en Java et à utiliser IntelliJ Idea et Gradle, et dure quelques semaines.",
+      github: 'https://github.com/Iryonis/poo-project',
+      site: '',
+      type: 'Jeu vidéo sur ordinateur',
+      tool: 'Java, Gradle et IntelliJ Idea',
+      lang: 'En français',
+      access: 'Pas accessible'
     }
   ]
 }

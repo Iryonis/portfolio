@@ -14,30 +14,12 @@ import Project from './projects/Project.vue'
         :date="project.date"
         :image="project.image"
         :description="project.description"
-        :link="project.link"
+        :github="project.github"
         :site="project.site"
-      />
-      <Project
-        title="test 1"
-        date="26/25/23"
-        description="Pretium lectus quam id leo. Urna et pharetra aliquam vestibulum morbi blandit cursus risus."
-        link=""
-        image=""
-        site="https://example.com"
-      />
-      <Project
-        title="test 2"
-        date="26/25/24"
-        description="Pretium lectus quam id leo. Urna et pharetra aliquam vestibulum morbi blandit cursus risus."
-        link=""
-        image=""
-      />
-      <Project
-        title="test 3"
-        date="03/06/23"
-        description="Pretium lectus quam id leo. Urna et pharetra aliquam vestibulum morbi blandit cursus risus."
-        link=""
-        image=""
+        :type="project.type"
+        :tool="project.tool"
+        :lang="project.lang"
+        :access="project.access"
       />
     </div>
   </div>

@@ -16,13 +16,29 @@ const props = defineProps({
     type: String,
     required: true
   },
-  link: {
+  github: {
     type: String,
     required: true
   },
   site: {
     type: String,
     required: false
+  },
+  type: {
+    type: String,
+    required: true
+  },
+  tool: {
+    type: String,
+    required: true
+  },
+  lang: {
+    type: String,
+    required: true
+  },
+  access: {
+    type: String,
+    required: true
   }
 })
 </script>
@@ -72,25 +88,51 @@ const props = defineProps({
     <div
       class="flex flex-col w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white/5 border-beige rounded border-2 shadow-lg shadow-black/50"
     >
+      <!-- If Website -->
       <a
+        v-if="site && site.includes('http')"
         :href="site"
         target="_blank"
         rel="noopener noreferrer"
-        :title="site ? 'Link to the project site' : ''"
-        :aria-label="site ? 'Link to the project site' : ''"
+        title="Link to the project site"
+        aria-label="Link to the project site"
         class="flex justify-center items-center w-full bg-beige"
       >
         <img
           :src="'src/assets/img/' + image"
           aria-label="Project image"
-          :class="{
-            'hover:scale-90 transition-all duration-500 ease-in-out': site,
-            'cursor-default': !site
-          }"
+          class="hover:scale-95 transition-all duration-500 ease-in-out"
         />
       </a>
+      <!-- Else -->
+      <div v-else class="flex justify-center items-center w-full bg-beige">
+        <img :src="'src/assets/img/' + image" aria-label="Project image" class="cursor-default" />
+      </div>
 
       <div class="p-4">
+        <div class="p-4 flex flex-wrap lg:flex-nowrap gap-1 text-center items-center">
+          <span
+            class="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full w-full lg:w-auto"
+            title="Project type"
+            >{{ type }}</span
+          >
+          <span
+            class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full w-full lg:w-auto"
+            title="Tools used for the project"
+            >{{ tool }}</span
+          >
+          <span
+            class="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full w-full lg:w-auto"
+            title="Language of the project"
+            >{{ lang }}</span
+          >
+          <span
+            class="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full w-full lg:w-auto"
+            title="Accessibility of the project"
+            >{{ access }}</span
+          >
+        </div>
+
         <div class="flex items-center justify-between space-x-2">
           <div class="text-xl underline font-bold text-yellow-500">{{ title }}</div>
           <time class="font-caveat font-medium text-orange-500">{{ date }}</time>
@@ -98,8 +140,9 @@ const props = defineProps({
         <div class="text-beige my-4">
           {{ description }}
         </div>
+
         <a
-          :href="link"
+          :href="github"
           target="_blank"
           rel="noopener noreferrer"
           class="text-white inline mr-8 hover:underline"
