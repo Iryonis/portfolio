@@ -10,6 +10,7 @@ export default {
   about_text2:
     ' Ce site va vous permettre de découvrir mes différents projets, mes compétences ainsi que les liens vers mes différents réseaux sociaux.',
   skills: 'Compétences',
+  see_more: 'En savoir plus...',
   tools: 'Outils',
   career: 'Parcours',
   colon: ' :',
