@@ -99,14 +99,18 @@ const props = defineProps({
         class="flex justify-center items-center w-full bg-beige"
       >
         <img
-          :src="'src/assets/img/' + image"
+          :src="'src/assets/img/projects/' + image"
           aria-label="Project image"
           class="hover:scale-95 transition-all duration-500 ease-in-out"
         />
       </a>
       <!-- Else -->
       <div v-else class="flex justify-center items-center w-full bg-beige">
-        <img :src="'src/assets/img/' + image" aria-label="Project image" class="cursor-default" />
+        <img
+          :src="'src/assets/img/projects/' + image"
+          aria-label="Project image"
+          class="cursor-default"
+        />
       </div>
 
       <div class="p-4">

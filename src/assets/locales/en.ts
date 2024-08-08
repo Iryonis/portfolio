@@ -12,6 +12,11 @@ export default {
   skills: 'Skills',
   see_more: 'See more...',
   tools: 'Tools',
+  tier_1: 'I have used these tools several times AND in an advanced way...',
+  tier_2: 'I have used these tools several times in a basic way...',
+  tier_3: 'I have used these tools once before...',
+  alt_text_skills: 'I did {count} project(s) using {lang}.',
+  banana: 'no bananas | {n} banana | {n} bananas',
   career: 'Course',
   colon: ':',
   2021: {

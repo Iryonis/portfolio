@@ -12,6 +12,10 @@ export default {
   skills: 'Compétences',
   see_more: 'En savoir plus...',
   tools: 'Outils',
+  tier_1: "J'ai utilisé ces outiles à plusieurs reprises ET de façon avancée...",
+  tier_2: "J'ai utilisé ces outils à plusieurs reprises de façon basique...",
+  tier_3: "J'ai déjà utilisé ces outils...",
+  alt_text_skills: "J'ai fais {count} projet(s) en utilisant {lang}.",
   career: 'Parcours',
   colon: ' :',
   2021: {
