@@ -19,7 +19,7 @@ const changeDisplayedObject = () => {
   <div class="grid md:grid-cols-4 md:col-span-4 m-8 md:mb-12" :class="{ hidden: !about }">
     <div class="md:ml-0" :class="about ? 'md:col-span-3' : 'hidden'">
       <div
-        class="h-full flex flex-col gap-4 justify-between"
+        class="h-full flex flex-col gap-8"
         :class="{ 'animate-text_animation': !about_animation }"
       >
         <AboutText /><Career />
@@ -32,7 +32,7 @@ const changeDisplayedObject = () => {
       @click="changeDisplayedObject()"
     >
       <div
-        class="group h-full flex items-center justify-center border border-beige shadow-lg shadow-black/70 bg-white/10 text-white hover:bg-white/20 active:scale-95 rounded-r-full cursor-pointer"
+        class="group_anim_underl group h-full flex items-center justify-center border border-beige shadow-lg shadow-black/70 bg-beige/10 text-white hover:bg-beige/20 active:scale-95 rounded-r-full cursor-pointer"
         :class="{ 'animate-skills_button_animation': !about_animation }"
       >
         <svg
@@ -51,7 +51,7 @@ const changeDisplayedObject = () => {
           />
         </svg>
         <div>
-          <h2 class="text-xl group-hover:underline font-bold">{{ $t('skills') }}</h2>
+          <h2 class="text-xl animated_underline font-bold">{{ $t('skills') }}</h2>
           <h3 class="text-lg">{{ $t('see_more') }}</h3>
         </div>
       </div>
@@ -66,11 +66,11 @@ const changeDisplayedObject = () => {
       @click="changeDisplayedObject()"
     >
       <div
-        class="group h-full flex items-center justify-center border border-beige shadow-lg shadow-black/70 bg-white/10 text-white hover:bg-white/20 active:scale-95 rounded-l-full cursor-pointer"
+        class="group_anim_underl group h-full flex items-center justify-center border border-beige shadow-lg shadow-black/70 bg-white/10 text-white hover:bg-white/20 active:scale-95 rounded-l-full cursor-pointer"
         :class="{ 'animate-about_button_animation': about_animation }"
       >
         <div>
-          <h2 class="text-xl group-hover:underline font-bold">{{ $t('about_link') }}</h2>
+          <h2 class="text-xl animated_underline font-bold">{{ $t('about_link') }}</h2>
           <h3 class="text-lg">{{ $t('see_more') }}</h3>
         </div>
         <svg

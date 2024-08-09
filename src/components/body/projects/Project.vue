@@ -149,7 +149,7 @@ const props = defineProps({
           :href="github"
           target="_blank"
           rel="noopener noreferrer"
-          class="text-white inline mr-8 hover:underline"
+          class="text-white inline mr-8 animated_underline hover:animate-text_shining"
         >
           {{ $t('project_more') }}
           <svg
@@ -172,7 +172,7 @@ const props = defineProps({
           :href="site"
           target="_blank"
           rel="noopener noreferrer"
-          class="text-white inline hover:underline"
+          class="text-white inline animated_underline hover:animate-text_shining"
           :class="{ hidden: !site }"
         >
           {{ $t('project_site') }}

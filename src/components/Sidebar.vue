@@ -93,35 +93,27 @@ onUnmounted(() => {
         <div class="grid grid-rows-7 items-center text-center text-white">
           <RouterLink
             :to="{ name: 'home' }"
-            class="p-2 pb-7 border border-transparent hover:border-beige rounded-t-lg transition-all duration-200 ease-out active:scale-90"
+            class="p-2 pb-7 border border-transparent hover:border-beige hover:animate-border_shining rounded-t-lg transition-all duration-200 ease-out active:scale-90"
           >
             {{ $t('home_link') }}</RouterLink
           >
-          <div class="border-r border-r-beige w-1/2 h-full flex-1 self-start"></div>
+          <div class="border-r border-r-beige w-1/2 row-span-2 h-full flex-1 self-start"></div>
           <RouterLink
             :to="{ name: 'about' }"
-            class="relative p-2 py-7 border hover:border-beige transition-all duration-200 ease-out active:scale-90"
+            class="relative p-2 py-7 border hover:border-beige hover:animate-border_shining transition-all duration-200 ease-out active:scale-90"
             :class="styleCurrentRoute('about')"
           >
             <div ref="about" class="absolute top-0 left-0 w-full bg-black/50"></div>
             <span class="relative z-10">{{ $t('about_link') }}</span>
           </RouterLink>
-          <div class="border-r border-r-beige w-1/2 h-full flex-1 self-start"></div>
+          <div class="border-r border-r-beige w-1/2 row-span-2 h-full flex-1 self-start"></div>
           <RouterLink
             :to="{ name: 'projects' }"
-            class="relative p-2 py-7 border hover:border-beige transition-all duration-200 ease-out active:scale-90"
+            class="relative p-2 pt-7 border hover:border-beige hover:animate-border_shining rounded-b-lg transition-all duration-200 ease-out active:scale-90"
             :class="styleCurrentRoute('projects')"
           >
             <div ref="projects" class="absolute top-0 left-0 w-full bg-black/50"></div>
             <span class="relative z-10">{{ $t('projects_link') }}</span>
-          </RouterLink>
-          <div class="border-r border-r-beige w-1/2 h-full flex-1 self-start"></div>
-          <RouterLink
-            :to="{ name: 'links' }"
-            class="relative p-2 pt-7 border hover:border-beige rounded-b-lg transition-all duration-200 ease-out active:scale-90"
-            :class="styleCurrentRoute('links')"
-            ><div ref="links" class="absolute top-0 left-0 w-full bg-black/50"></div>
-            <span class="relative z-10">{{ $t('links_link') }}</span>
           </RouterLink>
         </div>
         <!-- SVG drawing -> not responsive -->

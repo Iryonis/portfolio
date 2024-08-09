@@ -1,9 +1,10 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="md:mt-4 border border-beige shadow-lg shadow-black/70 bg-white/10">
+  <div class="border rounded-bl-lg border-beige shadow-lg shadow-black/70 bg-white/10">
     <div class="m-4">
-      <div class="text-white font-bold text-xl mb-4 uppercase">{{ $t('career') }}</div>
+      <div class="text-white font-bold text-lg md:text-xl ml-4 uppercase">{{ $t('career') }}</div>
+      <hr class="w-1/3 border-[0.5] border-beige my-4" />
       <ul class="text-md text-beige">
         <li class="my-4">
           <span class="font-bold text-lg underline underline-offset-4">2021{{ $t('colon') }}</span>
@@ -11,8 +12,7 @@
             <li>
               {{ $t('2021.1')
               }}<a
-                id="underline"
-                class="text-white"
+                class="text-white animated_underline"
                 href="https://www.u-bordeaux.fr/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -30,8 +30,7 @@
             <li>
               {{ $t('2022.2') }}
               <a
-                id="underline"
-                class="text-white"
+                class="text-white animated_underline"
                 href="https://www.labri.fr/presentation/le-mot-du-directeur"
                 title="Laboratoire Bordelais de Recherche en Informatique"
                 target="_blank"
@@ -41,8 +40,7 @@
             </li>
             <li>
               {{ $t('2022.3') }}'<a
-                id="underline"
-                class="text-white"
+                class="text-white animated_underline"
                 href="https://adventofcode.com/2022/about"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -59,8 +57,7 @@
             <li>
               {{ $t('2023.3')
               }}<a
-                id="underline"
-                class="text-white"
+                class="text-white animated_underline"
                 href="https://www.nuitdelinfo.com/"
                 target="_blank"
                 rel="noopener noreferrer"

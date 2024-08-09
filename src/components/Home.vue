@@ -5,8 +5,14 @@ import { useI18n } from 'vue-i18n'
 
 const { locale } = useI18n()
 
-let subtitleText = "Developer and computer science student with a bachelor's degree at"
 let language = locale.value
+let subtitleText = ''
+
+if (language === 'en') {
+  subtitleText = "Developer and computer science student with a bachelor's degree at"
+} else {
+  subtitleText = "Développeur et étudiant en master d'informatique à l'"
+}
 
 const frenchText = () => {
   if (language === 'en') {
@@ -52,8 +58,7 @@ const writeText = (lang: string) => {
     <div class="text-center text-beige text-sm md:text-base" id="subtitle">
       {{ subtitleText }}
       <a
-        id="underline"
-        class="text-white"
+        class="text-white animated_underline"
         href="https://www.u-bordeaux.fr/"
         target="_blank"
         rel="noopener noreferrer"
@@ -63,14 +68,14 @@ const writeText = (lang: string) => {
     <div class="flex justify-center mt-8">
       <button
         @click="englishText"
-        class="p-1 md:p-2 mr-20 text-sm md:text-base bg-beige/10 border border-b-[3px] border-b-beige/50 border-r-4 border-r-beige/50 rounded-lg border-beige text-beige hover:bg-beige/20 shadow-lg shadow-black/50 active:shadow-none active:scale-90 transition-all duration-200 ease-in-out"
+        class="p-1 md:p-2 mr-20 text-sm md:text-base border border-b-[3px] border-b-beige/50 border-r-4 border-r-beige/50 rounded-lg border-beige text-beige hover:animate-button_shining shadow-lg shadow-black/50 active:shadow-none active:scale-90 transition-all duration-200 ease-in-out"
       >
         <img src="../assets/uk.svg" class="size-5 md:size-6 inline mr-2" />
         {{ $t('en') }}
       </button>
       <button
         @click="frenchText"
-        class="p-1 md:p-2 text-sm md:text-base bg-beige/10 border border-b-[3px] border-b-beige/50 border-r-4 border-r-beige/50 rounded-lg border-beige text-beige hover:bg-beige/20 shadow-lg shadow-black/50 active:shadow-none active:scale-90 transition-all duration-200 ease-in-out"
+        class="p-1 md:p-2 text-sm md:text-base border border-b-[3px] border-b-beige/50 border-r-4 border-r-beige/50 rounded-lg border-beige text-beige hover:animate-button_shining shadow-lg shadow-black/50 active:shadow-none active:scale-90 transition-all duration-200 ease-in-out"
       >
         <img src="../assets/france.svg" class="size-5 md:size-6 inline mr-2" />
         {{ $t('fr') }}

@@ -32,18 +32,18 @@ body {
 }
 
 /* Style for the underline effect */
-#underline,
-#underline:after,
-#underline:before {
+.animated_underline,
+.animated_underline:after,
+.animated_underline:before {
   transition: all 0.5s;
 }
 
-#underline {
+.animated_underline {
   position: relative;
   display: inline-block;
 }
 
-#underline:after {
+.animated_underline:after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -56,7 +56,8 @@ body {
   height: 1px;
 }
 
-#underline:hover:after {
+.group_anim_underl:hover .animated_underline:after, /* Works on group -> may cause problems */
+.animated_underline:hover:after {
   width: 100%;
 }
 </style>

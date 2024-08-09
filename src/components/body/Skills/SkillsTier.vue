@@ -14,7 +14,10 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="border border-beige shadow-lg shadow-black/70 bg-white/10">
+  <div
+    class="border border-beige shadow-lg shadow-black/70 bg-white/10"
+    :class="tier == 'tier_3' ? 'rounded-br-lg' : 'rounded-none'"
+  >
     <div class="m-4 md:m-8">
       <div class="text-white font-bold text-lg md:text-xl my-4 uppercase">{{ $t(tier) }}</div>
       <hr class="w-1/2 border-[0.5] border-beige" />

@@ -6,16 +6,16 @@ export default {
   projects_link: 'Projects',
   links_link: 'Links',
   about_text:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed vulputate odio ut enim blandit. Diam ut venenatis tellus in. Sagittis orci a scelerisque purus semper eget. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Viverra justo nec ultrices dui. Sagittis vitae et leo duis ut diam. Tellus in hac habitasse platea dictumst vestibulum rhoncus. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Sit amet facilisis magna etiam tempor orci eu. Proin libero nunc consequat interdum varius sit amet mattis vulputate. Auctor neque vitae tempus quam pellentesque nec. Id aliquet lectus proin nibh.',
+    "I am Guilhem BONNEFOUS, currently a master's student in Computer Science at the University of Bordeaux, FRANCE, 21 years old. In my free time, I enjoy reading fantasy and science fiction, gaming online with friends, and progressing my programming projects. Concerning IT, I particularly like web development and the discovery of all technologies allowing to obtain a visual and concrete result.",
   about_text2:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed vulputate odio ut enim blandit. Diam ut venenatis tellus in. Sagittis orci a scelerisque purus semper eget. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Viverra justo nec ultrices dui. Sagittis vitae et leo duis ut diam. Tellus in hac habitasse platea dictumst vestibulum rhoncus. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Sit amet facilisis magna etiam tempor orci eu. Proin libero nunc consequat interdum varius sit amet mattis vulputate. Auctor neque vitae tempus quam pellentesque nec. Id aliquet lectus proin nibh.',
+    'On this page, you will be able to discover my background in IT, my skills as well as links to my networks. You can also see my personal projects, carried out as part of my studies or in my free time, on the next page.',
   skills: 'Skills',
   see_more: 'See more...',
   tools: 'Tools',
   tier_1: 'I have used these tools several times AND in an advanced way...',
   tier_2: 'I have used these tools several times in a basic way...',
   tier_3: 'I have used these tools once before...',
-  alt_text_skills: 'I did {count} project(s) using {lang}.',
+  alt_text_skills: 'I did {count} project(s)/courses using {lang}.',
   banana: 'no bananas | {n} banana | {n} bananas',
   career: 'Course',
   colon: ':',
@@ -44,30 +44,30 @@ export default {
   project_site: 'View the site',
   projects: [
     {
-      title: 'VideoTracker',
-      date: 'April 2022',
-      image: 'Videotracker.png',
+      title: 'Takuzu, website version',
+      date: 'March to june 2023',
+      image: 'takuzu_web.png',
       description:
-        'Videotracker is a Python project developed by two students in their first year of computer science studies. It adheres to a set of specifications that include requirements such as video display, pausing, frame-by-frame navigation, drawing points on the video, and creating a CSV file to show the evolution of these points. The project was executed following SCRUM methodologies, aiming to familiarize the students with agile project management principles.',
-      github: 'https://github.com/Iryonis/videotracker',
-      site: '',
-      type: 'Desktop application',
-      tool: 'Python',
-      lang: 'In French',
-      access: 'Not accessible'
+        'Takuzu is a project realized by 4 students during their second year of computer science. The goal was to create a website enabling the user to play the game Takuzu (also known as Unruly or Binairo) coded in C. This is the fourth part of the year-long project. ',
+      github: 'https://github.com/Iryonis/takuzu-06c',
+      site: 'https://guilhem-bonnefous.emi.u-bordeaux.fr/refeartgui2306c/',
+      type: 'Website videogame',
+      tool: 'Vanilla web languages (HTML, CSS, JavaScript)',
+      lang: 'In English',
+      access: 'Accessibility? Yes'
     },
     {
-      title: 'Wiki For Honor',
-      date: 'December 2022',
-      image: 'WikiFH.png',
+      title: 'Takuzu, desktop version',
+      date: 'September 2022 to March 2023',
+      image: 'NDI2023.png',
       description:
-        "WikiFH (for 'Wiki For Honor') is a website created by a computer science student during his second year at the university. It was a small project aimed at teaching students how to create a website using vanilla technologies such as HTML, CSS, JavaScript, and PHP. I decided to create a website in honor (just kidding) of the game For Honor, by Ubisoft, a game I really enjoy. Its realization is very basic, but it was the first serious website I made.",
-      github: 'https://github.com/Iryonis/wikiFH',
-      site: 'https://guilhem-bonnefous.emi.u-bordeaux.fr/Reseau/index.html',
-      type: 'Website',
-      tool: 'Vanilla web languages (HTML, CSS, JavaScript, PHP)',
-      lang: 'In French',
-      access: 'Not accessible'
+        "Takuzu is a project realized by four students during their second year of computer science. The goal was to create the game Takuzu (also known as Unruly or Binairo) using the C language, and to explore libraries and tools used in project development. This is the second and third part of the project, which are 'game in terminal' and 'game with graphical interface'. The graphical interface was made with a Lord of the Rings theme in mind, and every assets were handmade.",
+      github: 'https://github.com/Iryonis/takuzu-06c',
+      site: '',
+      type: 'Desktop videogame',
+      tool: 'C, Cmake, make and SDL2',
+      lang: 'In English',
+      access: 'Accessibility? No'
     },
     {
       title: 'NDI2023',
@@ -80,7 +80,7 @@ export default {
       type: 'Website',
       tool: 'Angular',
       lang: 'In French',
-      access: 'Not accessible'
+      access: 'Accessibility? No'
     },
     {
       title: 'UBGarden',
@@ -93,7 +93,33 @@ export default {
       type: 'Desktop videogame',
       tool: 'Java, Gradle and IntelliJ IDEA',
       lang: 'In French',
-      access: 'Not accessible'
+      access: 'Accessibility? No'
+    },
+    {
+      title: 'Wiki For Honor',
+      date: 'December 2022',
+      image: 'WikiFH.png',
+      description:
+        "WikiFH (for 'Wiki For Honor') is a website created by a computer science student during his second year at the university. It was a small project aimed at teaching students how to create a website using vanilla technologies such as HTML, CSS, JavaScript, and PHP. I decided to create a website in honor (just kidding) of the game For Honor, by Ubisoft, a game I really enjoy. Its realization is very basic, but it was the first serious website I made.",
+      github: 'https://github.com/Iryonis/wikiFH',
+      site: 'https://guilhem-bonnefous.emi.u-bordeaux.fr/Reseau/index.html',
+      type: 'Website',
+      tool: 'Vanilla web languages (HTML, CSS, JavaScript, PHP)',
+      lang: 'In French',
+      access: 'Accessibility? No'
+    },
+    {
+      title: 'VideoTracker',
+      date: 'April 2022',
+      image: 'Videotracker.png',
+      description:
+        'Videotracker is a Python project developed by two students in their first year of computer science studies. It adheres to a set of specifications that include requirements such as video display, pausing, frame-by-frame navigation, drawing points on the video, and creating a CSV file to show the evolution of these points. The project was executed following SCRUM methodologies, aiming to familiarize the students with agile project management principles.',
+      github: 'https://github.com/Iryonis/videotracker',
+      site: '',
+      type: 'Desktop application',
+      tool: 'Python',
+      lang: 'In French',
+      access: 'Accessibility? No'
     }
   ]
 }

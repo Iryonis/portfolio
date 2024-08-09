@@ -3,7 +3,7 @@ import SkillsTier from './SkillsTier.vue'
 </script>
 
 <template>
-  <div class="border border-beige shadow-lg shadow-black/70 bg-white/10">
+  <div class="border border-beige rounded-tr-lg shadow-lg shadow-black/70 bg-white/10">
     <div class="m-4 md:m-8">
       <div class="text-white font-bold text-xl my-4 uppercase">{{ $t('skills') }}</div>
     </div>

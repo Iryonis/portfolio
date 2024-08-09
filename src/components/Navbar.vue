@@ -22,33 +22,26 @@ const styleCurrentRoute = (path: string) => {
 
 <template>
   <nav>
-    <div class="grid grid-cols-4 sm:grid-cols-7 items-center text-center text-white">
+    <div class="grid grid-cols-3 sm:grid-cols-7 items-center text-center text-white">
       <RouterLink
         :to="{ name: 'home' }"
-        class="p-0.5 sm:p-1 md:p-2 md:px-4 text-sm sm:text-base border hover:border-beige rounded-l-lg"
+        class="p-0.5 sm:p-1 md:p-2 md:px-4 text-sm sm:text-base border hover:border-beige hover:animate-border_shining rounded-l-lg"
         :class="styleCurrentRoute('home')"
         >{{ $t('home_link') }}</RouterLink
       >
-      <hr class="hidden sm:block border-beige border" />
+      <hr class="hidden sm:block col-span-2 border-beige border" />
       <RouterLink
         :to="{ name: 'about' }"
-        class="p-0.5 sm:p-1 md:p-2 md:px-4 text-sm sm:text-base border hover:border-beige"
+        class="p-0.5 sm:p-1 md:p-2 md:px-4 text-sm sm:text-base border hover:border-beige hover:animate-border_shining"
         :class="styleCurrentRoute('about')"
         >{{ $t('about_link') }}</RouterLink
       >
-      <hr class="hidden sm:block border-beige border" />
+      <hr class="hidden sm:block col-span-2 border-beige border" />
       <RouterLink
         :to="{ name: 'projects' }"
-        class="p-0.5 sm:p-1 md:p-2 md:px-4 text-sm sm:text-base border hover:border-beige"
+        class="p-0.5 sm:p-1 md:p-2 md:px-4 text-sm sm:text-base border hover:border-beige hover:animate-border_shining rounded-r-lg"
         :class="styleCurrentRoute('projects')"
         >{{ $t('projects_link') }}</RouterLink
-      >
-      <hr class="hidden sm:block border-beige border" />
-      <RouterLink
-        :to="{ name: 'links' }"
-        class="p-0.5 sm:p-1 md:p-2 md:px-4 text-sm sm:text-base border hover:border-beige rounded-r-lg"
-        :class="styleCurrentRoute('links')"
-        >{{ $t('links_link') }}</RouterLink
       >
     </div>
 
@@ -64,7 +57,7 @@ const styleCurrentRoute = (path: string) => {
       </svg>
       <RouterLink
         :to="next"
-        class="group absolute z-10 left-1/2 transform -translate-x-1/2 -translate-y-2 p-1 md:p-2 font-semibold border border-b-[3px] border-b-beige/50 border-r-4 border-r-beige/50 rounded-lg border-beige text-beige hover:bg-beige/20 shadow-lg shadow-black/50 active:shadow-none active:scale-90 transition-all duration-200 ease-in-out"
+        class="group absolute z-10 left-1/2 transform -translate-x-1/2 -translate-y-2 p-1 md:p-2 font-semibold border border-b-[3px] border-b-beige/50 border-r-4 border-r-beige/50 rounded-lg border-beige text-beige hover:animate-button_shining shadow-lg shadow-black/50 active:shadow-none active:scale-90 transition-all duration-200 ease-in-out"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

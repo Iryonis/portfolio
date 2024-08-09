@@ -6,13 +6,13 @@ export default {
   projects_link: 'Projets',
   links_link: 'Liens',
   about_text:
-    "Je suis Guilhem BONNEFOUS, actuellement étudiant en master d'Informatique à l'Université de Bordeaux. Sur mon temps libre, j'aime lire, jouer, et coder. J'aime particulièrement le développement web et la découverte de nouvelles technologies.",
+    "Je suis Guilhem BONNEFOUS, actuellement étudiant en master d'Informatique à l'Université de Bordeaux, FRANCE, de 21 ans. Sur mon temps libre, j'aime lire de la fantaisie et de la science-fiction, jouer en ligne avec des amis, et avancer mes projets de programmation. Concernant l'informatique, j'aime particulièrement le développement web et la découverte de toutes technologies permettant d'obtenir un résultat visuel et concret.",
   about_text2:
-    ' Ce site va vous permettre de découvrir mes différents projets, mes compétences ainsi que les liens vers mes différents réseaux sociaux.',
+    "Sur cette page, vous allez pouvoir découvrir mon parcours dans l'informatique, mes compétences ainsi que les liens vers mes réseaux. Vous pouvez également voir mes projets personnels, réalisés dans le cadre de mes études ou de mon temps libre, sur la page suivante.",
   skills: 'Compétences',
   see_more: 'En savoir plus...',
   tools: 'Outils',
-  tier_1: "J'ai utilisé ces outiles à plusieurs reprises ET de façon avancée...",
+  tier_1: "J'ai utilisé ces outils à plusieurs reprises ET de façon avancée...",
   tier_2: "J'ai utilisé ces outils à plusieurs reprises de façon basique...",
   tier_3: "J'ai déjà utilisé ces outils...",
   alt_text_skills: "J'ai fais {count} projet(s) en utilisant {lang}.",
@@ -43,30 +43,30 @@ export default {
   project_site: 'Voir le site',
   projects: [
     {
-      title: 'VideoTracker',
-      date: 'Avril 2022',
-      image: 'Videotracker.png',
+      title: 'Takuzu, version site web',
+      date: 'De mars à juin 2023',
+      image: 'takuzu_web.png',
       description:
-        "Videotracker est un projet Python développé par deux étudiants lors de leur première année d'études en informatique. Il respecte un ensemble de spécifications incluant des exigences telles que l'affichage de vidéo, la pause, la navigation image par image, le dessin de points sur la vidéo et la création d'un fichier CSV pour montrer l'évolution de ces points. Le projet a été réalisé en suivant les méthodologies SCRUM, visant à familiariser les étudiants avec les principes de gestion de projet agile.",
-      github: 'https://github.com/Iryonis/videotracker',
-      site: '',
-      type: 'Application de bureau',
-      tool: 'Python',
-      lang: 'En français',
-      access: 'Pas accessible'
+        "Takuzu est un projet réalisé par quatre étudiants lors de leur deuxième année en informatique. L'objectif était de créer un site web permettant à l'utilisateur de jouer au jeu Takuzu (également connu sous le nom de Unruly ou Binairo), codé précédemment en C. Il s'agit de la quatrième partie du projet.",
+      github: 'https://github.com/Iryonis/takuzu-06c',
+      site: 'https://guilhem-bonnefous.emi.u-bordeaux.fr/refeartgui2306c/',
+      type: 'Jeu vidéo sur site web',
+      tool: 'Langages web basiques (HTML, CSS, JavaScript)',
+      lang: 'En anglais',
+      access: 'Accessibilité ? Oui'
     },
     {
-      title: 'Wiki For Honor',
-      date: 'Décembre 2022',
-      image: 'WikiFH.png',
+      title: 'Takuzu, version bureau',
+      date: 'De septembre 2022 à mars 2023',
+      image: 'NDI2023.png',
       description:
-        "WikiFH (pour 'Wiki For Honor') est un site web créé par un étudiant en informatique durant sa deuxième année à l'université. C'était un petit projet visant à enseigner aux étudiants comment créer un site web avec des technologies de base telles que HTML, CSS, Javascript et PHP. J'ai décidé de créer un site web en l'honneur (je plaisante) de For Honor, un jeu créé par Ubisoft, que j'aime beaucoup. Sa réalisation est très basique, mais c'était le premier site web sérieux que j'ai réalisé.",
-      github: 'https://github.com/Iryonis/wikiFH',
-      site: 'https://guilhem-bonnefous.emi.u-bordeaux.fr/Reseau/index.html',
-      type: 'Site web',
-      tool: 'Langages web basiques (HTML, CSS, JavaScript, PHP)',
-      lang: 'En français',
-      access: 'Pas accessible'
+        "Takuzu est un projet réalisé par quatre étudiants lors de leur deuxième année en informatique. L'objectif était de créer le jeu Takuzu (également connu sous le nom de Unruly ou Binairo) en utilisant le langage C, et d'explorer les bibliothèques et outils utilisés dans le développement de projets. Il s'agit des deuxième et troisième parties du projet, que l'on peut résumer comme étant 'jeu en terminal' et 'jeu avec interface graphique'. L'interface graphique a été réalisée avec un thème Le Seigneur des Anneaux en tête, et tous les assets graphiques ont été faits à la main.",
+      github: 'https://github.com/Iryonis/takuzu-06c',
+      site: '',
+      type: 'Jeu vidéo sur ordinateur',
+      tool: 'C, Cmake, make et SDL2',
+      lang: 'En anglais',
+      access: 'Accessibilité ? Non'
     },
     {
       title: 'NDI2023',
@@ -79,7 +79,7 @@ export default {
       type: 'Site web',
       tool: 'Angular',
       lang: 'En français',
-      access: 'Pas accessible'
+      access: 'Accessibilité ? Non'
     },
     {
       title: 'UBGarden',
@@ -92,7 +92,33 @@ export default {
       type: 'Jeu vidéo sur ordinateur',
       tool: 'Java, Gradle et IntelliJ Idea',
       lang: 'En français',
-      access: 'Pas accessible'
+      access: 'Accessibilité ? Non'
+    },
+    {
+      title: 'Wiki For Honor',
+      date: 'Décembre 2022',
+      image: 'WikiFH.png',
+      description:
+        "WikiFH (pour 'Wiki For Honor') est un site web créé par un étudiant en informatique durant sa deuxième année à l'université. C'était un petit projet visant à enseigner aux étudiants comment créer un site web avec des technologies de base telles que HTML, CSS, Javascript et PHP. J'ai décidé de créer un site web en l'honneur (je plaisante) de For Honor, un jeu créé par Ubisoft, que j'aime beaucoup. Sa réalisation est très basique, mais c'était le premier site web sérieux que j'ai réalisé.",
+      github: 'https://github.com/Iryonis/wikiFH',
+      site: 'https://guilhem-bonnefous.emi.u-bordeaux.fr/Reseau/index.html',
+      type: 'Site web',
+      tool: 'Langages web basiques (HTML, CSS, JavaScript, PHP)',
+      lang: 'En français',
+      access: 'Accessibilité ? Non'
+    },
+    {
+      title: 'VideoTracker',
+      date: 'Avril 2022',
+      image: 'Videotracker.png',
+      description:
+        "Videotracker est un projet Python développé par deux étudiants lors de leur première année d'études en informatique. Il respecte un ensemble de spécifications incluant des exigences telles que l'affichage de vidéo, la pause, la navigation image par image, le dessin de points sur la vidéo et la création d'un fichier CSV pour montrer l'évolution de ces points. Le projet a été réalisé en suivant les méthodologies SCRUM, visant à familiariser les étudiants avec les principes de gestion de projet agile.",
+      github: 'https://github.com/Iryonis/videotracker',
+      site: '',
+      type: 'Application de bureau',
+      tool: 'Python',
+      lang: 'En français',
+      access: 'Accessibilité ? Non'
     }
   ]
 }
