@@ -74,7 +74,7 @@ const resetHeight = () => {
  * @param {string} path - The path to compare with the current route
  */
 const styleCurrentRoute = (path: string) => {
-  return route.name === path ? 'uppercase text-beige border-beige' : 'border-transparent'
+  return route.name === path ? 'text-beige border-beige' : 'border-transparent'
 }
 
 onMounted(() => {

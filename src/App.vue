@@ -7,7 +7,7 @@ const route = useRoute()
 
 <template>
   <div class="min-w-screen min-h-screen flex flex-col justify-center items-center">
-    <LangToggle :class="{ hidden: route.name === 'home' }" /> <RouterView />
+    <LangToggle v-if="route.name !== 'home'" /> <RouterView />
   </div>
 </template>
 

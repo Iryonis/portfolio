@@ -12,13 +12,21 @@ export default {
   skills: 'Skills',
   see_more: 'See more...',
   tools: 'Tools',
+
+  // SKILLS
+
   tier_1: 'I have used these tools several times AND in an advanced way...',
   tier_2: 'I have used these tools several times in a basic way...',
   tier_3: 'I have used these tools once before...',
-  alt_text_skills: 'I did {count} project(s)/courses using {lang}.',
-  banana: 'no bananas | {n} banana | {n} bananas',
-  career: 'Course',
+  title_text_skills: 'Using {lang}, I...',
+  text_one_skills: 'did {count} project(s)',
+  text_two_skills: 'followed {count} course(s)',
+
+  career: 'Career',
   colon: ':',
+
+  // CAREER
+
   2021: {
     1: "First year of bachelor's degree in computer science at ",
     2: 'Interviews with developers from Asobo Studio and Ubisoft Bordeaux',
@@ -35,11 +43,9 @@ export default {
     3: 'Participation in '
   },
   '2024': "First year of master's degree in computer science... (in progress)",
-  master: 'Master',
-  advanced: 'Advanced',
-  intermediate: 'Intermediate',
-  beginner: 'Beginner',
-  novice: 'Novice',
+
+  // PROJECTS
+
   project_more: 'Learn more on Github',
   project_site: 'View the site',
   projects: [

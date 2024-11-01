@@ -7,7 +7,8 @@ export default {
         beige: '#FFEAAE'
       },
       fontFamily: {
-        philosopher: ['Philosopher', 'sans-serif']
+        philosopher: ['Philosopher', 'sans-serif'],
+        lato: ['Lato', 'sans-serif']
       },
       keyframes: {
         button_shining: {

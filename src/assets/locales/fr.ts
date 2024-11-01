@@ -12,10 +12,18 @@ export default {
   skills: 'Compétences',
   see_more: 'En savoir plus...',
   tools: 'Outils',
+
+  // SKILLS
+
   tier_1: "J'ai utilisé ces outils à plusieurs reprises ET de façon avancée...",
   tier_2: "J'ai utilisé ces outils à plusieurs reprises de façon basique...",
   tier_3: "J'ai déjà utilisé ces outils...",
-  alt_text_skills: "J'ai fais {count} projet(s) en utilisant {lang}.",
+  title_text_skills: "En utilisant {lang}, j'ai...",
+  text_one_skills: 'réalisé {count} projet(s)',
+  text_two_skills: 'suivi {count} cours',
+
+  // CAREER
+
   career: 'Parcours',
   colon: ' :',
   2021: {
@@ -34,11 +42,9 @@ export default {
     3: 'Participation à la '
   },
   '2024': 'Première année de master en informatique... (en cours)',
-  master: 'Maîtrise',
-  advanced: 'Avancé',
-  intermediate: 'Intermédiaire',
-  beginner: 'Débutant',
-  novice: 'Novice',
+
+  // PROJECTS
+
   project_more: 'En savoir plus sur Github',
   project_site: 'Voir le site',
   projects: [

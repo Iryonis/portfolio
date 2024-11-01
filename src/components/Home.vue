@@ -70,14 +70,14 @@ const writeText = (lang: string) => {
         @click="englishText"
         class="p-1 md:p-2 mr-20 text-sm md:text-base border border-b-[3px] border-b-beige/50 border-r-4 border-r-beige/50 rounded-lg border-beige text-beige hover:animate-button_shining shadow-lg shadow-black/50 active:shadow-none active:scale-90 transition-all duration-200 ease-in-out"
       >
-        <img src="../assets/uk.svg" class="size-5 md:size-6 inline mr-2" />
+        <img src="../assets/img/flags/uk.svg" class="size-5 md:size-6 inline mr-2" />
         {{ $t('en') }}
       </button>
       <button
         @click="frenchText"
         class="p-1 md:p-2 text-sm md:text-base border border-b-[3px] border-b-beige/50 border-r-4 border-r-beige/50 rounded-lg border-beige text-beige hover:animate-button_shining shadow-lg shadow-black/50 active:shadow-none active:scale-90 transition-all duration-200 ease-in-out"
       >
-        <img src="../assets/france.svg" class="size-5 md:size-6 inline mr-2" />
+        <img src="../assets/img/flags/france.svg" class="size-5 md:size-6 inline mr-2" />
         {{ $t('fr') }}
       </button>
     </div>

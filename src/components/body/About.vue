@@ -59,7 +59,10 @@ const changeDisplayedObject = () => {
   </div>
 
   <!-- Skills displayed -->
-  <div class="grid md:grid-cols-4 md:col-span-4 m-8 md:mb-12" :class="{ hidden: about }">
+  <div
+    class="grid md:grid-cols-4 md:col-span-4 m-8 md:mb-12 overflow-x-hidden"
+    :class="{ hidden: about }"
+  >
     <div
       class="mb-4 md:mb-0 md:col-span-1"
       :class="{ hidden: about }"

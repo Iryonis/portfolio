@@ -1,7 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="border border-beige rounded-tl-lg shadow-lg shadow-black/70 bg-white/10">
+  <div
+    class="border border-beige rounded-t-lg md:rounded-tr-none md:rounded-tl-lg shadow-lg shadow-black/70 bg-white/10"
+  >
     <div class="m-4">
       <div class="text-white font-bold text-lg md:text-xl ml-4 uppercase">
         {{ $t('about_link') }}
