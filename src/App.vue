@@ -13,8 +13,9 @@ const route = useRoute()
 
 <style>
 /* Background gradient */
+/*background: linear-gradient(-45deg, #1a5276, #054a91, #102b3f, #2f2fa2); */
 body {
-  background: linear-gradient(-45deg, #1a5276, #054a91, #102b3f, #2f2fa2);
+  background: linear-gradient(-45deg, #0d1b2a, #1b263b, #102b3f, #2f2fa2);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }

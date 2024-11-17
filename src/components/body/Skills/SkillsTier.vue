@@ -1,13 +1,16 @@
 <script setup lang="ts">
 import SkillsIcon from './SkillsIcon.vue'
+import type { PropType } from 'vue'
 
-const props = defineProps({
+defineProps({
   tier: {
     type: String,
     required: true
   },
   skills: {
-    type: Array,
+    type: Array as PropType<
+      Array<{ src: string; lang: string; projects_number: number; courses_number: number }>
+    >,
     required: true
   }
 })

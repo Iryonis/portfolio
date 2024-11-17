@@ -59,7 +59,7 @@ const props = defineProps({
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        class="size-6 group-odd:block group-even:hidden"
+        class="size-6 group-odd:block group-even:block md:group-odd:block md:group-even:hidden"
       >
         <path
           stroke-linecap="round"
@@ -75,7 +75,7 @@ const props = defineProps({
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        class="size-6 group-even:block group-odd:hidden"
+        class="size-6 group-odd:hidden group-even:hidden md:group-even:block md:group-odd:hidden"
       >
         <path
           stroke-linecap="round"
@@ -169,11 +169,11 @@ const props = defineProps({
           </svg>
         </a>
         <a
+          v-if="site && site.includes('http')"
           :href="site"
           target="_blank"
           rel="noopener noreferrer"
           class="text-white inline animated_underline hover:animate-text_shining"
-          :class="{ hidden: !site }"
         >
           {{ $t('project_site') }}
           <svg

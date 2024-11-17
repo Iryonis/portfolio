@@ -45,12 +45,13 @@ const handleScroll = () => {
 
 /**
  * Change the height of the absolute elements to reflect the scroll position
+ * -> Simulates the position of the user on the sidebar
  *
  * @param {number} scrollRatio - The ratio of the scroll position
  */
 const heightAbsoluteElements = (scrollRatio: number) => {
   refs.forEach((ref) => {
-    if (ref.value?.parentElement?.classList.contains('uppercase')) {
+    if (ref.value?.parentElement?.classList.contains('height-change')) {
       const newHeight = ref.value.parentElement.clientHeight * scrollRatio
       ref.value.style.height = `${newHeight}px`
     }
@@ -74,7 +75,7 @@ const resetHeight = () => {
  * @param {string} path - The path to compare with the current route
  */
 const styleCurrentRoute = (path: string) => {
-  return route.name === path ? 'text-beige border-beige' : 'border-transparent'
+  return route.name === path ? 'text-beige border-beige height-change' : 'border-transparent'
 }
 
 onMounted(() => {

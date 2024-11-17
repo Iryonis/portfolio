@@ -1,6 +1,18 @@
 <script setup lang="ts">
 import Sidebar from './Sidebar.vue'
 import Navbar from './Navbar.vue'
+import NextButton from './NextButton.vue'
+
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+
+/**
+ * Check if the current route is the about page to display (or not) the next button
+ */
+const isAboutPage = () => {
+  return route.name === 'about'
+}
 </script>
 
 <template>
@@ -9,4 +21,5 @@ import Navbar from './Navbar.vue'
     <div class="hidden md:block md:col-span-1"><Sidebar /></div>
     <RouterView />
   </div>
+  <div class="mb-24"><NextButton v-if="isAboutPage()" next="/projects" /></div>
 </template>
