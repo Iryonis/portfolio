@@ -18,21 +18,21 @@ const styleCurrentRoute = (path: string) => {
     <div class="grid grid-cols-3 sm:grid-cols-7 items-center text-center text-white">
       <RouterLink
         :to="{ name: 'home' }"
-        class="p-0.5 sm:p-1 md:p-2 md:px-4 text-sm sm:text-base border hover:border-beige hover:animate-border_shining rounded-l-lg"
+        class="w-24 p-0.5 sm:p-1 md:p-2 md:px-4 text-sm sm:text-base border hover:border-beige hover:animate-border_shining rounded-l-lg"
         :class="styleCurrentRoute('home')"
         >{{ $t('home_link') }}</RouterLink
       >
       <hr class="hidden sm:block col-span-2 border-beige border" />
       <RouterLink
         :to="{ name: 'about' }"
-        class="p-0.5 sm:p-1 md:p-2 md:px-4 text-sm sm:text-base border hover:border-beige hover:animate-border_shining"
+        class="w-24 p-0.5 sm:p-1 md:p-2 md:px-4 text-sm sm:text-base border hover:border-beige hover:animate-border_shining"
         :class="styleCurrentRoute('about')"
         >{{ $t('about_link') }}</RouterLink
       >
       <hr class="hidden sm:block col-span-2 border-beige border" />
       <RouterLink
         :to="{ name: 'projects' }"
-        class="p-0.5 sm:p-1 md:p-2 md:px-4 text-sm sm:text-base border hover:border-beige hover:animate-border_shining rounded-r-lg"
+        class="w-24 p-0.5 sm:p-1 md:p-2 md:px-4 text-sm sm:text-base border hover:border-beige hover:animate-border_shining rounded-r-lg"
         :class="styleCurrentRoute('projects')"
         >{{ $t('projects_link') }}</RouterLink
       >
