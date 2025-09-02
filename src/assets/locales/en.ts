@@ -42,7 +42,15 @@ export default {
     2: 'Part-time student job throughout the year to continue the site started during the 2022 internship at LaBRI',
     3: 'Participation in '
   },
-  '2024': "First year of master's degree in computer science... (in progress)",
+  2024: {
+    1: "First year of master's degree in computer science",
+    2: 'Participation in ',
+    3: 'Development of an addon for the video game World of Warcraft in Lua',
+    4: 'Development of a Chrome extension'
+  },
+  2025: {
+    1: "Second year of master's degree in computer science... (in progress)"
+  },
 
   // PROJECTS
 

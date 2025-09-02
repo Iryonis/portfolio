@@ -5,11 +5,11 @@
     class="border rounded-b-lg md:rounded-br-none md:rounded-bl-lg border-beige shadow-lg shadow-black/70 bg-white/10"
   >
     <div class="m-4">
-      <div class="text-white font-bold text-lg md:text-xl ml-4 uppercase">{{ $t('career') }}</div>
+      <div class="text-white font-bold text-lg md:text-2xl ml-4 uppercase">{{ $t('career') }}</div>
       <hr class="w-1/3 border-[0.5] border-beige my-4" />
       <ul class="text-md text-beige">
         <li class="my-4">
-          <span class="font-bold text-lg underline underline-offset-4">2021{{ $t('colon') }}</span>
+          <span class="font-semibold text-xl underline decoration-1 underline-offset-4">2021</span>
           <ul class="list-disc pl-8">
             <li>
               {{ $t('2021.1')
@@ -26,7 +26,7 @@
           </ul>
         </li>
         <li class="my-4">
-          <span class="font-bold text-lg underline underline-offset-4">2022{{ $t('colon') }}</span>
+          <span class="font-semibold text-xl underline decoration-1 underline-offset-4">2022</span>
           <ul class="list-disc pl-8">
             <li>{{ $t('2022.1') }}</li>
             <li>
@@ -52,7 +52,7 @@
           </ul>
         </li>
         <li class="my-4">
-          <span class="font-bold text-lg underline underline-offset-4">2023{{ $t('colon') }}</span>
+          <span class="font-semibold text-xl underline decoration-1 underline-offset-4">2023</span>
           <ul class="list-disc pl-8">
             <li>{{ $t('2023.1') }}</li>
             <li>{{ $t('2023.2') }}</li>
@@ -65,13 +65,34 @@
                 rel="noopener noreferrer"
                 >Nuit de l'Info</a
               >
+              2023
             </li>
           </ul>
         </li>
         <li class="my-4">
-          <span class="font-bold text-lg underline underline-offset-4">2024{{ $t('colon') }}</span>
+          <span class="font-semibold text-xl underline decoration-1 underline-offset-4">2024</span>
           <ul class="list-disc pl-8">
-            <li>{{ $t('2024') }}</li>
+            <li>{{ $t('2024.1') }}</li>
+            <li>
+              {{ $t('2024.2')
+              }}<a
+                class="text-white animated_underline"
+                href="https://www.nuitdelinfo.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Nuit de l'Info</a
+              >
+              2024
+            </li>
+
+            <li>{{ $t('2024.3') }}</li>
+            <li>{{ $t('2024.4') }}</li>
+          </ul>
+        </li>
+        <li class="my-4">
+          <span class="font-semibold text-xl underline decoration-1 underline-offset-4">2025</span>
+          <ul class="list-disc pl-8">
+            <li>{{ $t('2025.1') }}</li>
           </ul>
         </li>
       </ul>

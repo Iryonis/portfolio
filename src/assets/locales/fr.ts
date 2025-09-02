@@ -41,7 +41,15 @@ export default {
     2: "Job étudiant à temps partiel tout au long de l'année pour continuer le site commencé durant le stage de 2022 au LaBRI",
     3: 'Participation à la '
   },
-  '2024': 'Première année de master en informatique... (en cours)',
+  2024: {
+    1: 'Première année de master en informatique',
+    2: 'Participation à la ',
+    3: "Développement d'un addon pour le jeu vidéo World of Warcraft en Lua",
+    4: "Développement d'une extension Chrome"
+  },
+  2025: {
+    1: 'Deuxième année de master en informatique... (en cours)'
+  },
 
   // PROJECTS
 

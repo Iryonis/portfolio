@@ -20,6 +20,7 @@ export default {
     { src: 'mongodb.webp', lang: 'MongoDB', projects_number: 1, courses_number: 0 },
     { src: 'parcel.svg', lang: 'Parceljs', projects_number: 1, courses_number: 0 },
     { src: 'intellijidea.webp', lang: "IntelliJ'IDEA", projects_number: 1, courses_number: 0 },
-    { src: 'c++.svg', lang: 'C++', projects_number: 1, courses_number: 1 }
+    { src: 'c++.svg', lang: 'C++', projects_number: 1, courses_number: 1 },
+    { src: 'lua.webp', lang: 'Lua', projects_number: 1, courses_number: 0 }
   ]
 }
