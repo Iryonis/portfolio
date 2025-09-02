@@ -58,16 +58,42 @@ export default {
   project_site: 'View the site',
   projects: [
     {
+      title: 'SWYT: Stop Wasting Your Time',
+      date: 'Summer 2025',
+      image: 'swyt.webp',
+      description:
+        'SWYT (Stop Wasting Your Time) is a Chrome extension developed in JavaScript. It allows users to limit the time spent each day watching YouTube Shorts. The user can choose a daily time limit, and the extension will track the time spent watching YouTube Shorts. If the limit is exceeded, the extension will redirect the user and prevent them from watching more Shorts until the next day. This personal project allows me to develop a useful tool while also exploring Chrome extension development (including manifests and the Chrome API).',
+      github: 'https://github.com/Iryonis/stop-wasting-your-time',
+      site: '',
+      type: 'Browser extension',
+      tool: 'HTML, CSS & JavaScript',
+      lang: 'English & French',
+      access: 'Accessibility? Yes'
+    },
+    {
+      title: 'EMH: Earthen Master Hammer Addon',
+      date: 'Spring 2025',
+      image: 'emh.webp',
+      description:
+        'Earthen Master Hammer Addon (EMH) is an addon for the video game World of Warcraft, developed in Lua. It simplifies the use of the blacksmithing item Earth Master Hammer. This was my first real personal project and the first time I programmed an addon for Wow (so I discovered both the Lua language and the Wow API).',
+      github: 'https://github.com/Iryonis/EarthenMasterHammerAddon',
+      site: 'https://www.curseforge.com/wow/addons/emh',
+      type: 'Video game addon',
+      tool: 'Lua',
+      lang: 'English, French & more',
+      access: 'Accessibility? No'
+    },
+    {
       title: 'Takuzu, website version',
-      date: 'March to june 2023',
+      date: 'March to June 2023',
       image: 'takuzu_web.webp',
       description:
         'Takuzu is a project realized by 4 students during their second year of computer science. The goal was to create a website enabling the user to play the game Takuzu (also known as Unruly or Binairo) coded in C. This is the fourth part of the year-long project. ',
       github: 'https://github.com/Iryonis/takuzu-06c',
       site: 'https://guilhem-bonnefous.emi.u-bordeaux.fr/refeartgui2306c/',
       type: 'Website videogame',
-      tool: 'Vanilla web languages (HTML, CSS, JavaScript)',
-      lang: 'In English',
+      tool: 'HTML, CSS & JavaScript',
+      lang: 'English',
       access: 'Accessibility? Yes'
     },
     {
@@ -79,13 +105,13 @@ export default {
       github: 'https://github.com/Iryonis/takuzu-06c',
       site: '',
       type: 'Desktop videogame',
-      tool: 'C, Cmake, make and SDL2',
-      lang: 'In English',
+      tool: 'C, Cmake & SDL2',
+      lang: 'English',
       access: 'Accessibility? No'
     },
     {
-      title: 'NDI2023',
-      date: '7 and 8 décember 2023',
+      title: 'NDI 2023',
+      date: '7 and 8 December 2023',
       image: 'NDI2023.webp',
       description:
         'Website created for the "Nuit de l\'Info" 2023, by the team "Gragas 404 Not Found". The topic was "Facing climate change: fact or fiction", and it was sponsored by the "Réseau Action Climat" association.',
@@ -93,7 +119,7 @@ export default {
       site: 'https://roirtur.github.io/NDI2023/',
       type: 'Website',
       tool: 'Angular',
-      lang: 'In French',
+      lang: 'French',
       access: 'Accessibility? No'
     },
     {
@@ -105,8 +131,8 @@ export default {
       github: 'https://github.com/Iryonis/poo-project',
       site: '',
       type: 'Desktop videogame',
-      tool: 'Java, Gradle and IntelliJ IDEA',
-      lang: 'In French',
+      tool: 'Java, Gradle & IntelliJ IDEA',
+      lang: 'French',
       access: 'Accessibility? No'
     },
     {
@@ -118,8 +144,8 @@ export default {
       github: 'https://github.com/Iryonis/wikiFH',
       site: 'https://guilhem-bonnefous.emi.u-bordeaux.fr/Reseau/index.html',
       type: 'Website',
-      tool: 'Vanilla web languages (HTML, CSS, JavaScript, PHP)',
-      lang: 'In French',
+      tool: 'HTML, CSS, JavaScript & PHP',
+      lang: 'French',
       access: 'Accessibility? No'
     },
     {
@@ -132,7 +158,7 @@ export default {
       site: '',
       type: 'Desktop application',
       tool: 'Python',
-      lang: 'In French',
+      lang: 'French',
       access: 'Accessibility? No'
     }
   ]

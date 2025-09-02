@@ -57,6 +57,32 @@ export default {
   project_site: 'Voir le site',
   projects: [
     {
+      title: 'SWYT : Stop Wasting Your Time',
+      date: 'Été 2025',
+      image: 'swyt.webp',
+      description:
+        "SWYT (Stop Wasting Your Time) est une extension Chrome, développée en Javascript. Elle permet de limiter le temps passé chaque jour à visionner des YouTube Shorts. L'utilisateur peut choisir un temps quotidien à ne pas dépasser, et l'extension va chronométrer le temps passé à visionner des YouTube Shorts, et si ce temps est dépassé, elle va rediriger l'utilisateur et l'empêcher de visionner plus de Shorts jusqu'au lendemain. C'est un projet personnel me permettant à la fois de développer un outil m'étant utile, et à la fois de découvrir le développement d'extension Chrome (et donc les manifest et l'API Chrome).",
+      github: 'https://github.com/Iryonis/stop-wasting-your-time',
+      site: '',
+      type: 'Extension de navigateur',
+      tool: 'HTML, CSS & JavaScript',
+      lang: 'Anglais & français',
+      access: 'Accessibilité ? Oui'
+    },
+    {
+      title: 'EMH : Earthen Master Hammer Addon',
+      date: 'Printemps 2025',
+      image: 'emh.webp',
+      description:
+        "Earthen Master Hammer Addon (EMH) est un addon pour le jeu vidéo World of Warcraft, développé en Lua. Il permet de simplifier l'utilisation de l'objet de forgeron Marteau de maître terrestre. C'était mon premier vrai projet personnel et la première fois que j'ai programmé un addon pour Wow (j'ai donc découvert à la fois le langage Lua et l'API de Wow).",
+      github: 'https://github.com/Iryonis/EarthenMasterHammerAddon',
+      site: 'https://www.curseforge.com/wow/addons/emh',
+      type: 'Addon pour jeu vidéo',
+      tool: 'Lua',
+      lang: 'Anglais, français & plus',
+      access: 'Accessibilité ? Non'
+    },
+    {
       title: 'Takuzu, version site web',
       date: 'De mars à juin 2023',
       image: 'takuzu_web.webp',
@@ -65,8 +91,8 @@ export default {
       github: 'https://github.com/Iryonis/takuzu-06c',
       site: 'https://guilhem-bonnefous.emi.u-bordeaux.fr/refeartgui2306c/',
       type: 'Jeu vidéo sur site web',
-      tool: 'Langages web basiques (HTML, CSS, JavaScript)',
-      lang: 'En anglais',
+      tool: 'HTML, CSS & JavaScript',
+      lang: 'Anglais',
       access: 'Accessibilité ? Oui'
     },
     {
@@ -78,8 +104,8 @@ export default {
       github: 'https://github.com/Iryonis/takuzu-06c',
       site: '',
       type: 'Jeu vidéo sur ordinateur',
-      tool: 'C, Cmake, make et SDL2',
-      lang: 'En anglais',
+      tool: 'C, Cmake & SDL2',
+      lang: 'Anglais',
       access: 'Accessibilité ? Non'
     },
     {
@@ -92,7 +118,7 @@ export default {
       site: 'https://roirtur.github.io/NDI2023/',
       type: 'Site web',
       tool: 'Angular',
-      lang: 'En français',
+      lang: 'Français',
       access: 'Accessibilité ? Non'
     },
     {
@@ -104,8 +130,8 @@ export default {
       github: 'https://github.com/Iryonis/poo-project',
       site: '',
       type: 'Jeu vidéo sur ordinateur',
-      tool: 'Java, Gradle et IntelliJ Idea',
-      lang: 'En français',
+      tool: 'Java, Gradle & IntelliJ Idea',
+      lang: 'Français',
       access: 'Accessibilité ? Non'
     },
     {
@@ -117,8 +143,8 @@ export default {
       github: 'https://github.com/Iryonis/wikiFH',
       site: 'https://guilhem-bonnefous.emi.u-bordeaux.fr/Reseau/index.html',
       type: 'Site web',
-      tool: 'Langages web basiques (HTML, CSS, JavaScript, PHP)',
-      lang: 'En français',
+      tool: 'HTML, CSS, JavaScript & PHP',
+      lang: 'Français',
       access: 'Accessibilité ? Non'
     },
     {
@@ -131,7 +157,7 @@ export default {
       site: '',
       type: 'Application de bureau',
       tool: 'Python',
-      lang: 'En français',
+      lang: 'Français',
       access: 'Accessibilité ? Non'
     }
   ]

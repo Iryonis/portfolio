@@ -44,50 +44,9 @@ const props = defineProps({
 </script>
 
 <template>
-  <!-- Item #1 -->
-  <div
-    class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group"
-  >
-    <!-- Icon -->
-    <div
-      class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-beige text-black shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        aria-hidden="true"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="size-6 group-odd:block group-even:block md:group-odd:block md:group-even:hidden"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
-        />
-      </svg>
-
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        aria-hidden="true"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="size-6 group-odd:hidden group-even:hidden md:group-even:block md:group-odd:hidden"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5"
-        />
-      </svg>
-    </div>
-    <!-- Card -->
-    <div
-      class="flex flex-col w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white/5 border-beige rounded border-2 shadow-lg shadow-black/50"
-    >
+  <!-- Card -->
+  <div class="w-full flex flex-col">
+    <div class="bg-white/5 border-beige rounded border-2 shadow-lg shadow-black/50">
       <!-- If Website -->
       <a
         v-if="site && site.includes('http')"
@@ -114,31 +73,34 @@ const props = defineProps({
       </div>
 
       <div class="p-4">
-        <div class="p-4 flex flex-wrap lg:flex-nowrap gap-1 text-center items-center">
+        <div class="justify-center py-4 flex flex-col 2xl:flex-row gap-1 text-center items-stretch">
           <span
-            class="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full w-full lg:w-auto"
+            class="bg-gray-100 min-h-8 text-gray-800 text-xs font-medium me-2 px-2.5 py-2 rounded-lg w-full lg:w-auto flex items-center justify-center"
             title="Project type"
             >{{ type }}</span
           >
           <span
-            class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full w-full lg:w-auto"
-            title="Tools used for the project"
+            class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-lg w-full lg:w-auto flex items-center justify-center"
+            title="Tools and languages used for the project"
             >{{ tool }}</span
           >
           <span
-            class="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full w-full lg:w-auto"
+            class="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-lg w-full lg:w-auto flex items-center justify-center"
             title="Language of the project"
             >{{ lang }}</span
           >
           <span
-            class="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full w-full lg:w-auto"
+            class="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-lg w-full lg:w-auto flex items-center justify-center"
             title="Accessibility of the project"
             >{{ access }}</span
           >
         </div>
 
-        <div class="flex items-center justify-between space-x-2">
-          <div class="text-xl underline font-bold text-yellow-500">{{ title }}</div>
+        <div class="flex justify-between space-x-2">
+          <div class="text-2xl font-bold text-white">
+            {{ title }}
+            <hr class="w-1/2 md:border-[0.5] border-beige mt-4" />
+          </div>
           <time class="font-caveat font-medium text-orange-500">{{ date }}</time>
         </div>
         <div class="text-beige my-4">
