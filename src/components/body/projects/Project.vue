@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { ref, computed } from 'vue'
+
 const props = defineProps({
   title: {
     type: String,
@@ -41,6 +43,12 @@ const props = defineProps({
     required: true
   }
 })
+
+const isExpanded = ref(false)
+
+const toggleExpand = () => {
+  isExpanded.value = !isExpanded.value
+}
 </script>
 
 <template>
@@ -60,7 +68,7 @@ const props = defineProps({
         <img
           :src="'src/assets/img/projects/' + image"
           aria-label="Project image"
-          class="hover:scale-95 transition-all duration-500 ease-in-out"
+          class="hover:scale-95 transition-all max-h-60 duration-500 ease-in-out"
         />
       </a>
       <!-- Else -->
@@ -68,7 +76,7 @@ const props = defineProps({
         <img
           :src="'src/assets/img/projects/' + image"
           aria-label="Project image"
-          class="cursor-default"
+          class="cursor-default max-h-64 hover:max-h-96 transition-all duration-1000 ease-in-out"
         />
       </div>
 
@@ -96,18 +104,48 @@ const props = defineProps({
           >
         </div>
 
-        <div class="flex justify-between space-x-2">
+        <div class="flex justify-between space-x-8">
           <div class="text-2xl font-bold text-white">
             {{ title }}
             <hr class="w-1/2 md:border-[0.5] border-beige mt-4" />
           </div>
           <time class="font-caveat font-medium text-orange-500">{{ date }}</time>
         </div>
-        <div class="text-beige my-4">
-          {{ description }}
+        <!-- Description avec système d'expansion -->
+        <div class="my-4">
+          <div
+            :class="[
+              'text-beige transition-all duration-300 ease-in-out overflow-hidden',
+              isExpanded ? 'max-h-none' : 'max-h-36'
+            ]"
+          >
+            {{ description }}
+          </div>
+
+          <!-- Bouton d'expansion -->
+          <button
+            @click="toggleExpand"
+            class="mt-2 text-sm text-blue-400 hover:text-blue-300 transition-colors duration-200 flex items-center"
+          >
+            {{ isExpanded ? $t('show_less') : $t('show_more') }}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              :class="[
+                'size-4 ml-1 transition-transform duration-200',
+                isExpanded ? 'rotate-180' : ''
+              ]"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+          </button>
         </div>
 
         <a
+          v-if="github && github.includes('http')"
           :href="github"
           target="_blank"
           rel="noopener noreferrer"

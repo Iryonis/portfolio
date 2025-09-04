@@ -3,7 +3,7 @@ import Project from './projects/Project.vue'
 </script>
 
 <template>
-  <div class="grid grid-cols-2 md:grid-cols-3 gap-8 md:col-span-4 mt-16 mr-16">
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-7 md:col-span-4 mt-16 mr-20">
     <Project
       v-for="project in $tm('projects')"
       :key="project.title"

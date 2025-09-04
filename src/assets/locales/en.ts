@@ -55,7 +55,9 @@ export default {
   // PROJECTS
 
   project_more: 'Learn more on Github',
-  project_site: 'View the site',
+  project_site: 'View the website',
+  show_more: 'Show more',
+  show_less: 'Show less',
   projects: [
     {
       title: 'SWYT: Stop Wasting Your Time',
@@ -75,7 +77,7 @@ export default {
       date: 'Spring 2025',
       image: 'emh.webp',
       description:
-        'Earthen Master Hammer Addon (EMH) is an addon for the video game World of Warcraft, developed in Lua. It simplifies the use of the blacksmithing item Earth Master Hammer. This was my first real personal project and the first time I programmed an addon for Wow (so I discovered both the Lua language and the Wow API).',
+        'Earthen Master Hammer Addon (EMH) is an addon for the video game World of Warcraft, developed in Lua. It simplifies the use of the blacksmithing item Earth Master Hammer. This was my first real personal project and the first time I programmed an addon for Wow (so I discovered both the Lua language and the Wow API). It was a bit challenging due to the lack of documentation and extensive tutorials, but it was very rewarding to manage to create a functional addon that I use daily in the game.',
       github: 'https://github.com/Iryonis/EarthenMasterHammerAddon',
       site: 'https://www.curseforge.com/wow/addons/emh',
       type: 'Video game addon',
@@ -84,11 +86,24 @@ export default {
       access: 'Accessibility? No'
     },
     {
+      title: 'LaBRI GHG Viewer',
+      date: 'June 2023 to June 2024',
+      image: 'ghg_viewer.webp',
+      description:
+        'Website created for LaBRI (Bordeaux Laboratory of Computer Science Research) during a one-month internship in June 2023, then continued as a part-time student job during the 2023-2024 academic year. The goal was to create a website allowing laboratory members to view the CO2 emissions they generated from their professional travel. The project also involved organizing data from several .csv files into a local database using Python. Once this was done, I was able to code the website, utilizing technologies such as Tailwind, Parcel, and ChartJS. The site allows for visualizing emissions globally, by individual, department, and team, as well as making predictions for future years. I coded the site and the Python scripts entirely on my own, with the help and guidance of two mentors. It was a very enriching experience, both technically and personally, as I was able to work on every aspect of a project and use any technology I wished, and contribute to an ecological cause. Due to the sensitivity of the data, both the website and the Github are private, and the image is obfuscated.',
+      github: '',
+      site: '',
+      type: 'Website & scripts',
+      tool: 'HTML, Tailwind CSS, Javascript, Python & Parcel',
+      lang: 'English',
+      access: 'Accessibility? Yes'
+    },
+    {
       title: 'Takuzu, website version',
       date: 'March to June 2023',
       image: 'takuzu_web.webp',
       description:
-        'Takuzu is a project realized by 4 students during their second year of computer science. The goal was to create a website enabling the user to play the game Takuzu (also known as Unruly or Binairo) coded in C. This is the fourth part of the year-long project. ',
+        'Takuzu is a project realized by 4 students during their second year of computer science. The goal was to port the game Takuzu (also known as Unruly or Binairo)(previously coded in C) on a website. This was the third part of the year-long project (after the terminal and the graphical versions). I did most of the work on the website, and it was the first time I implemented an handmade (albeit working) night mode. ',
       github: 'https://github.com/Iryonis/takuzu-06c',
       site: 'https://guilhem-bonnefous.emi.u-bordeaux.fr/refeartgui2306c/',
       type: 'Website videogame',
@@ -99,9 +114,9 @@ export default {
     {
       title: 'Takuzu, desktop version',
       date: 'September 2022 to March 2023',
-      image: 'NDI2023.webp',
+      image: 'takuzu_desktop.webp',
       description:
-        "Takuzu is a project realized by four students during their second year of computer science. The goal was to create the game Takuzu (also known as Unruly or Binairo) using the C language, and to explore libraries and tools used in project development. This is the second and third part of the project, which are 'game in terminal' and 'game with graphical interface'. The graphical interface was made with a Lord of the Rings theme in mind, and every assets were handmade.",
+        "Takuzu is a project realized by four students during their second year of computer science. The goal was to create the game Takuzu (also known as Unruly or Binairo) using the C language, and to explore libraries and tools used in project development. This is the first and second part of the project, which are 'game in terminal' and 'game with graphical interface'. The graphical interface was made with a Lord of the Rings theme in mind, and every assets were handmade by one of my friend (except for the background image).",
       github: 'https://github.com/Iryonis/takuzu-06c',
       site: '',
       type: 'Desktop videogame',
@@ -114,7 +129,7 @@ export default {
       date: '7 and 8 December 2023',
       image: 'NDI2023.webp',
       description:
-        'Website created for the "Nuit de l\'Info" 2023, by the team "Gragas 404 Not Found". The topic was "Facing climate change: fact or fiction", and it was sponsored by the "Réseau Action Climat" association.',
+        'Website created for the "Nuit de l\'Info" 2023, by the team "Gragas 404 Not Found". "Nuit de l\'Info" is a yearly event organised in December across French universities that lasts a night and where the goal is to code a website with challenges, have fun and meet enterprises. This year topic was "Facing climate change: fact or fiction", and it was sponsored by the "Réseau Action Climat" association.',
       github: 'https://github.com/Roirtur/NDI2023',
       site: 'https://roirtur.github.io/NDI2023/',
       type: 'Website',
@@ -127,7 +142,7 @@ export default {
       date: 'March to june 2023',
       image: 'UBGarden.webp',
       description:
-        'UBGarden is a Java project carried out in the second year of computer science at the University of Bordeaux, during the Object-Oriented Programming (OOP) course. It involves creating a small 2D video game similar to "Zelda", based on provided starter code. It is preceded by several weeks of tutorials to learn how to develop in Java and use IntelliJ IDEA and Gradle, and lasts a few weeks.',
+        'UBGarden was a Java project carried out in the second year of computer science at the University of Bordeaux, during the Object-Oriented Programming (OOP) course. It involved creating a small 2D video game similar to "Zelda", based on provided starter code. It was preceded by several weeks of tutorials to learn how to develop in Java and use IntelliJ IDEA and Gradle, and lasted a few weeks. This project was our first approach to Java and Object-Oriented Programming.',
       github: 'https://github.com/Iryonis/poo-project',
       site: '',
       type: 'Desktop videogame',
@@ -140,7 +155,7 @@ export default {
       date: 'December 2022',
       image: 'WikiFH.webp',
       description:
-        "WikiFH (for 'Wiki For Honor') is a website created by a computer science student during his second year at the university. It was a small project aimed at teaching students how to create a website using vanilla technologies such as HTML, CSS, JavaScript, and PHP. I decided to create a website in honor (just kidding) of the game For Honor, by Ubisoft, a game I really enjoy. Its realization is very basic, but it was the first serious website I made.",
+        "WikiFH (for 'Wiki For Honor') is a website created by a computer science student during his second year at the university. It was a small project aimed at teaching students how to create a website using vanilla technologies such as HTML, CSS, JavaScript, and PHP. I decided to create a website in honor of the game For Honor, by Ubisoft, a game I really enjoy. Its realization is very basic, but it was the first serious website I made.",
       github: 'https://github.com/Iryonis/wikiFH',
       site: 'https://guilhem-bonnefous.emi.u-bordeaux.fr/Reseau/index.html',
       type: 'Website',
