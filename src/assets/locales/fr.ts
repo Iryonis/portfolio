@@ -6,7 +6,7 @@ export default {
   projects_link: 'Projets',
   links_link: 'Liens',
   about_text:
-    "Je suis Guilhem BONNEFOUS, actuellement étudiant en master d'Informatique à l'Université de Bordeaux, FRANCE, de 21 ans. Sur mon temps libre, j'aime lire de la fantaisie et de la science-fiction, jouer en ligne avec des amis, et avancer mes projets de programmation. Concernant l'informatique, j'aime particulièrement le développement web et la découverte de toutes technologies permettant d'obtenir un résultat visuel et concret.",
+    "Je suis Guilhem BONNEFOUS, 22 ans, actuellement étudiant en 2e année de Master Génie Logiciel à l'Université de Bordeaux, FRANCE. Sur mon temps libre, j'aime lire des romans de fantaisie et de science-fiction, jouer seul ou avec des amis, avancer mes projets de programmation et rêver de chevaliers et de dragons. Concernant l'informatique, j'aime particulièrement le développement web et toute technologie permettant d'obtenir un résultat visuel et concret (vous l'aurez compris, je n'aime pas vraiment la théorie!).",
   about_text2:
     "Sur cette page, vous allez pouvoir découvrir mon parcours dans l'informatique, mes compétences ainsi que les liens vers mes réseaux. Vous pouvez également voir mes projets personnels, réalisés dans le cadre de mes études ou de mon temps libre, sur la page suivante.",
   skills: 'Compétences',

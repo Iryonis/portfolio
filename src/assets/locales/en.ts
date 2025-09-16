@@ -6,7 +6,7 @@ export default {
   projects_link: 'Projects',
   links_link: 'Links',
   about_text:
-    "I am Guilhem BONNEFOUS, currently a master's student in Computer Science at the University of Bordeaux, FRANCE, 21 years old. In my free time, I enjoy reading fantasy and science fiction, gaming online with friends, and progressing my programming projects. Concerning IT, I particularly like web development and the discovery of all technologies allowing to obtain a visual and concrete result.",
+    "I am Guilhem BONNEFOUS, 22 years old, currently a second year student in a Software Engineering Master's degree at the University of Bordeaux, FRANCE. In my free time, I enjoy reading fantasy and science fiction, gaming alone or with friends, progressing my programming projects and dreaming of knights and dragons. Concerning IT, I particularly like web development and any technology with a visual and concrete result (you will have understood, I don't really like theory!).",
   about_text2:
     'On this page, you will be able to discover my background in IT, my skills as well as links to my networks. You can also see my personal projects, carried out as part of my studies or in my free time, on the next page.',
   skills: 'Skills',
