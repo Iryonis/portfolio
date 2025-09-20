@@ -1,0 +1,13 @@
+{
+  "name": "Portfolio Guilhem BONNEFOUS",
+  "short_name": "Portfolio GB",
+  "description": "Full-stack developer and Software Engineering student.",
+  "start_url": "/portfolio",
+  "icons": [
+    { "src": "/portfolio/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/portfolio/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#FFEAAE",
+  "background_color": "#1a1a1a",
+  "display": "standalone"
+}

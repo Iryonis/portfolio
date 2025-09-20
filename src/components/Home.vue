@@ -12,15 +12,15 @@ let language = locale.value
 let subtitleText = ''
 
 if (language === 'en') {
-  subtitleText = "Developer and computer science student with a bachelor's degree at"
+  subtitleText = "Full-stack developer and Software Engineering master's student at"
 } else {
-  subtitleText = "Développeur et étudiant en master d'informatique à l'"
+  subtitleText = "Développeur fullstack et étudiant en master Génie Logiciel à l'"
 }
 
 const frenchText = () => {
   if (language === 'en') {
     subtitleText =
-      "Développeur et étudiant en master d'informatique à l'<a id='underline' class='text-white' href='https://www.u-bordeaux.fr/'>Université de Bordeaux</a>, en France."
+      "Développeur fullstack et étudiant en master Génie Logiciel à l'<a id='underline' class='text-white' href='https://www.u-bordeaux.fr/'>Université de Bordeaux</a>, en France."
     language = 'wait'
     writeText('fr')
   }
@@ -29,7 +29,7 @@ const frenchText = () => {
 const englishText = () => {
   if (language === 'fr') {
     subtitleText =
-      "Developer and computer science student with a bachelor's degree at <a id='underline' class='text-white' href='https://www.u-bordeaux.fr/'>Université de Bordeaux</a>, France."
+      "Full-stack developer and Software Engineering master's student at <a id='underline' class='text-white' href='https://www.u-bordeaux.fr/'>Université de Bordeaux</a>, France."
     language = 'wait'
     writeText('en')
   }

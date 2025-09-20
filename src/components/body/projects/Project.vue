@@ -44,8 +44,6 @@ const props = defineProps({
   }
 })
 
-const imageUrl = computed(() => `${import.meta.env.BASE_URL}img/projects/${props.image}`)
-
 const isExpanded = ref(false)
 
 const toggleExpand = () => {
@@ -68,7 +66,7 @@ const toggleExpand = () => {
         class="flex justify-center items-center w-full bg-beige"
       >
         <img
-          :src="imageUrl"
+          :src="image"
           aria-label="Project image"
           class="hover:scale-95 transition-all max-h-60 duration-500 ease-in-out"
         />
@@ -76,7 +74,7 @@ const toggleExpand = () => {
       <!-- Else -->
       <div v-else class="flex justify-center items-center w-full bg-beige">
         <img
-          :src="imageUrl"
+          :src="image"
           aria-label="Project image"
           class="cursor-default max-h-64 hover:max-h-96 transition-all duration-1000 ease-in-out"
         />

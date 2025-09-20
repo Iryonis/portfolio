@@ -1,5 +1,7 @@
 <script setup lang="ts">
-const baseURL = import.meta.env.BASE_URL
+import githubImage from '@/assets/img/logo/github.svg'
+import linkedinImage from '@/assets/img/logo/linkedin.webp'
+import mailImage from '@/assets/img/logo/gmail.webp'
 </script>
 
 <template>
@@ -24,7 +26,7 @@ const baseURL = import.meta.env.BASE_URL
         >
           <div class="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center">
             <img
-              :src="`${baseURL}img/logo/github.svg`"
+              :src="githubImage"
               class="max-w-full max-h-full object-contain hover:invert transition-all duration-500"
               alt="GitHub logo"
             />
@@ -71,7 +73,7 @@ const baseURL = import.meta.env.BASE_URL
         >
           <div class="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center">
             <img
-              :src="`${baseURL}img/logo/linkedin.webp`"
+              :src="linkedinImage"
               class="max-w-full max-h-full object-contain hover:contrast-200 transition-all duration-500"
               alt="LinkedIn logo"
             />
@@ -256,7 +258,7 @@ const baseURL = import.meta.env.BASE_URL
         >
           <div class="w-28 h-20 sm:w-32 sm:h-24 flex items-center justify-center">
             <img
-              :src="`${baseURL}img/logo/gmail.webp`"
+              :src="mailImage"
               class="max-w-full max-h-full object-contain hover:contrast-150 transition-all duration-500"
               alt="Mail logo"
             />
