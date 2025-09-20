@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+
 const props = defineProps({
   src: {
     type: String,
@@ -17,13 +19,15 @@ const props = defineProps({
     required: true
   }
 })
+
+const imageUrl = computed(() => `${import.meta.env.BASE_URL}img/logo/${props.src}`)
 </script>
 
 <template>
   <div
     class="group relative size-20 md:size-40 border border-beige bg-white/10 p-2 mt-4 mr-4 cursor-default"
   >
-    <img :src="'src/assets/img/logo/' + src" class="w-full h-full" />
+    <img :src="imageUrl" class="w-full h-full" />
     <div
       class="hidden group-hover:block absolute top-0 left-0 w-[200%] md:w-full md:h-full z-50 bg-black/70"
     >

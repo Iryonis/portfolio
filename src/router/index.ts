@@ -29,11 +29,3 @@ const router = createRouter({
 })
 
 export default router
-
-/**
- * {
-  path: '/:pathMatch(.*)*',
-  name: 'NotFound',
-  component: NotFoundComponent // Votre composant Vue pour la page 404
-}
- */

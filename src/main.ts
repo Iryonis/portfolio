@@ -4,8 +4,8 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import { createI18n } from 'vue-i18n'
-import messagesEn from './assets/locales/en.ts'
-import messagesFr from './assets/locales/fr.ts'
+import messagesEn from './assets/locales/en'
+import messagesFr from './assets/locales/fr'
 
 const i18n = createI18n({
   legacy: false,
