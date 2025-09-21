@@ -56,6 +56,7 @@ export default {
 
   // PROJECTS
 
+  project_title: 'Projets',
   project_more: 'En savoir plus sur Github',
   project_site: 'Voir le site',
   show_more: 'Voir plus',

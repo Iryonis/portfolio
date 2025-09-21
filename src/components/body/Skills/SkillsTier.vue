@@ -24,7 +24,9 @@ defineProps({
         {{ $t(tier) }}
       </div>
       <hr class="w-full sm:w-1/2 border-[0.5] border-beige my-4" />
-      <div class="flex flex-row flex-wrap gap-2 mx-auto justify-center">
+      <div
+        class="flex flex-row flex-wrap gap-2 sm:gap-4 mx-auto sm:mx-4 justify-center sm:justify-start"
+      >
         <SkillsIcon
           v-for="(skill, index) in skills"
           :key="index"

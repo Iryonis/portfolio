@@ -53,7 +53,7 @@ const writeText = (lang: string) => {
 
 <template>
   <div class="w-72 mb-10 md:w-auto">
-    <span class="block text-4xl md:text-9xl text-center text-beige font-philosopher"
+    <span class="block text-5xl md:text-9xl text-center text-beige font-philosopher"
       >Guilhem <br />
       BONNEFOUS</span
     >

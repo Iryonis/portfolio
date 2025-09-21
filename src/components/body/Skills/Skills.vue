@@ -8,7 +8,9 @@ import SkillsData from './SkillsData'
     class="border border-beige rounded-t-lg md:rounded-tl-none md:rounded-tr-lg shadow-lg shadow-black/70 bg-white/10"
   >
     <div class="m-4 md:m-8">
-      <div class="text-white font-bold text-2xl my-4 uppercase">{{ $t('skills') }}</div>
+      <div class="text-white font-semibold text-3xl my-4 uppercase text-center sm:text-left">
+        {{ $t('skills') }}
+      </div>
     </div>
   </div>
   <SkillsTier tier="tier_1" :skills="SkillsData.tier_1" />

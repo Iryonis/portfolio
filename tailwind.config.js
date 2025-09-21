@@ -73,7 +73,7 @@ export default {
             'border-bottom-left-radius': '0px',
             'border-top-right-radius': '9999px',
             'border-bottom-right-radius': '9999px',
-            transform: 'translateX(328%)'
+            transform: 'translateX(300%)'
           }
         }
       },

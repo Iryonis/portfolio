@@ -30,13 +30,14 @@ const changeDisplayedObject = () => {
       </div>
     </div>
 
+    <!-- Button Skills -->
     <div
       class="mt-4 md:mt-0 md:ml-4 md:col-span-1"
       :class="{ hidden: !about }"
       @click="changeDisplayedObject()"
     >
       <div
-        class="group_anim_underl group h-full flex items-center justify-center border border-beige shadow-lg shadow-black/70 bg-beige/10 text-white hover:bg-beige/20 active:scale-95 rounded-r-full cursor-pointer"
+        class="group_anim_underl group h-full flex items-center justify-center border border-beige bg-beige/10 text-white shadow-lg shadow-black/70 hover:bg-beige/20 active:scale-95 rounded-r-full cursor-pointer"
         :class="{ 'animate-skills_button_animation': !about_animation }"
       >
         <svg
@@ -63,25 +64,15 @@ const changeDisplayedObject = () => {
   </div>
 
   <!-- Skills displayed -->
-  <div
-    class="grid md:grid-cols-4 md:col-span-4 m-8 md:mb-12 overflow-x-hidden"
-    :class="{ hidden: about }"
-  >
-    <div class="md:mr-16 md:ml-4" :class="about ? 'hidden' : 'md:col-span-3'">
-      <div
-        class="h-full flex flex-col gap-4 justify-between"
-        :class="{ 'animate-text_animation': about_animation }"
-      >
-        <Skills />
-      </div>
-    </div>
+  <div class="grid md:grid-cols-4 md:col-span-4 m-8 md:mb-12" :class="{ hidden: about }">
+    <!-- Button About -->
     <div
-      class="mt-4 md:mt-0 md:col-span-1"
+      class="mt-4 md:mt-0 md:col-span-1 order-2 sm:order-1"
       :class="{ hidden: about }"
       @click="changeDisplayedObject()"
     >
       <div
-        class="group_anim_underl group h-full flex items-center justify-center border border-beige shadow-lg shadow-black/70 bg-white/10 text-white hover:bg-white/20 active:scale-95 rounded-l-full cursor-pointer"
+        class="group_anim_underl group h-full flex items-center justify-center border border-beige bg-white/10 text-white shadow-lg shadow-black/70 hover:bg-white/20 active:scale-95 rounded-l-full cursor-pointer"
         :class="{ 'animate-about_button_animation': about_animation }"
       >
         <div>
@@ -103,6 +94,15 @@ const changeDisplayedObject = () => {
             d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
           />
         </svg>
+      </div>
+    </div>
+
+    <div class="md:mr-16 md:ml-4 order-1 sm:order-2" :class="about ? 'hidden' : 'md:col-span-3'">
+      <div
+        class="h-full flex flex-col gap-4 justify-between"
+        :class="{ 'animate-text_animation': about_animation }"
+      >
+        <Skills />
       </div>
     </div>
   </div>

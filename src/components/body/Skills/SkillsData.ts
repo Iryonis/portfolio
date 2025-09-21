@@ -29,7 +29,7 @@ formation = 2 : Both
 export default {
   tier_1: [
     { src: vanillaImg, lang: 'Vanilla Web', formation: 2 },
-    { src: tailwindImg, lang: 'Tailwind', formation: 0 },
+    { src: tailwindImg, lang: 'Tailwind 3', formation: 0 },
     { src: vueImg, lang: 'Vue.js', formation: 2 },
     { src: vscodeImg, lang: 'VS Code', formation: 2 }
   ],

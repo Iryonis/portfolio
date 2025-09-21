@@ -105,7 +105,7 @@ const toggleExpand = () => {
         </div>
 
         <div class="flex justify-between space-x-8">
-          <div class="text-2xl font-bold text-white">
+          <div class="text-xl sm:text-2xl font-bold text-white">
             {{ title }}
             <hr class="w-1/2 md:border-[0.5] border-beige mt-4" />
           </div>
