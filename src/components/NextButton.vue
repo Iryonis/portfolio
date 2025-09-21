@@ -1,16 +1,25 @@
 <script setup lang="ts">
-defineProps({
-  next: {
+import { useRouter } from 'vue-router'
+
+const props = defineProps({
+  destination: {
     type: String,
     required: true
   }
 })
+
+const router = useRouter()
+
+const handleNavigation = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+  router.push(props.destination)
+}
 </script>
 
 <template>
   <div class="z-0">
-    <RouterLink
-      :to="next"
+    <button
+      @click="handleNavigation()"
       class="group absolute z-10 left-1/2 transform -translate-x-1/2 -translate-y-2 p-1 md:p-2 font-semibold border border-b-[3px] border-b-beige/50 border-r-4 border-r-beige/50 rounded-lg border-beige text-beige hover:animate-button_shining shadow-lg shadow-black/50 active:shadow-none active:scale-90 transition-all duration-200 ease-in-out"
     >
       <svg
@@ -28,6 +37,6 @@ defineProps({
           d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3"
         />
       </svg>
-    </RouterLink>
+    </button>
   </div>
 </template>

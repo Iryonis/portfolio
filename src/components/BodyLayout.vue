@@ -21,5 +21,5 @@ const isAboutPage = () => {
     <div class="hidden md:block md:col-span-1"><Sidebar /></div>
     <RouterView />
   </div>
-  <div class="mb-24"><NextButton v-if="isAboutPage()" next="/projects" /></div>
+  <div class="mb-24"><NextButton v-if="isAboutPage()" destination="/projects" /></div>
 </template>
