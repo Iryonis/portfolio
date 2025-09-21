@@ -2,6 +2,25 @@
 import githubImage from '@/assets/img/logo/github.svg'
 import linkedinImage from '@/assets/img/logo/linkedin.webp'
 import mailImage from '@/assets/img/logo/gmail.webp'
+import SunflowerIcon from '@/components/SVG/SunflowerIcon.vue'
+import PlantIcon from '@/components/SVG/PlantIcon.vue'
+import { ref } from 'vue'
+
+let isCopied = ref(false)
+
+const copyMailToClipboard = async () => {
+  try {
+    await navigator.clipboard.writeText('bonnefousguilhem@gmail.com')
+    setTimeout(() => {
+      isCopied.value = true
+    }, 50)
+    setTimeout(() => {
+      isCopied.value = false
+    }, 2000)
+  } catch (error) {
+    console.error('Failed to copy email to clipboard:', error)
+  }
+}
 </script>
 
 <template>
@@ -17,7 +36,8 @@ import mailImage from '@/assets/img/logo/gmail.webp'
         <p class="mb-2">{{ $t('about_text') }}</p>
         <p>{{ $t('about_text2') }}</p>
       </div>
-      <hr class="w-1/3 border-[0.5] border-beige my-4" />
+      <hr class="w-full sm:w-1/3 border-[0.5] border-beige my-4" />
+      <!-- Links -->
       <div class="grid grid-cols-3 xl:grid-cols-5 gap-4 justify-items-center text-center">
         <a
           class="group_anim_underl flex flex-col items-center justify-center space-y-2 hover:scale-95 hover:cursor-pointer transition-all duration-300"
@@ -33,39 +53,9 @@ import mailImage from '@/assets/img/logo/gmail.webp'
           </div>
           <p class="text-white text-sm sm:text-base animated_underline">Github</p>
         </a>
-        <svg class="h-52 w-20 hidden xl:inline-block" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M 20 50 Q 50 82 35 114"
-            stroke="#FFEAAE"
-            stroke-width="2"
-            fill="none"
-            aria-hidden="true"
-          />
-          <path
-            d="M 35 114 Q 10 146 60 178"
-            stroke="#FFEAAE"
-            stroke-width="2"
-            fill="none"
-            aria-hidden="true"
-          />
 
-          <path
-            d="M 20 50 Q 5 40 15 4"
-            stroke="#FFEAAE"
-            stroke-width="2"
-            fill="none"
-            opacity="0.7"
-            aria-hidden="true"
-          />
-          <path
-            d="M 20 50 Q 35 30 15 4"
-            stroke="#FFEAAE"
-            stroke-width="2"
-            fill="#FFEAAE"
-            opacity="0.7"
-            aria-hidden="true"
-          />
-        </svg>
+        <PlantIcon />
+
         <a
           class="group_anim_underl flex flex-col items-center justify-center space-y-2 hover:scale-95 hover:cursor-pointer transition-all duration-300"
           :href="'https://www.linkedin.com/in/guilhem-bonnefous/'"
@@ -80,193 +70,40 @@ import mailImage from '@/assets/img/logo/gmail.webp'
           </div>
           <p class="text-white text-sm sm:text-base animated_underline">LinkedIn</p>
         </a>
-        <!-- Sun flower -->
-        <svg
-          class="h-52 w-20 hidden xl:inline-block"
-          preserveAspectRatio="xMinYMin meet"
-          xmlns="http://www.w3.org/2000/svg"
+
+        <SunflowerIcon />
+
+        <div
+          class="flex flex-col items-center justify-center hover:cursor-pointer space-y-2 transition-all duration-300"
         >
-          <!-- Stem -->
-          <path
-            d="M 50 50 Q 10 82 35 114"
-            stroke="#FFEAAE"
-            stroke-width="2"
-            fill="none"
-            aria-hidden="true"
-          />
-          <path
-            d="M 35 114 Q 50 146 20 178"
-            stroke="#FFEAAE"
-            stroke-width="2"
-            fill="none"
-            aria-hidden="true"
-          />
-
-          <!-- Main rays -->
-          <line
-            x1="50"
-            y1="50"
-            x2="50"
-            y2="30"
-            stroke="#FFEAAE"
-            stroke-width="2"
-            opacity="0.8"
-            aria-hidden="true"
-          />
-          <line
-            x1="50"
-            y1="50"
-            x2="64"
-            y2="36"
-            stroke="#FFEAAE"
-            stroke-width="2"
-            opacity="0.8"
-            aria-hidden="true"
-          />
-          <line
-            x1="50"
-            y1="50"
-            x2="70"
-            y2="50"
-            stroke="#FFEAAE"
-            stroke-width="2"
-            opacity="0.8"
-            aria-hidden="true"
-          />
-          <line
-            x1="50"
-            y1="50"
-            x2="64"
-            y2="64"
-            stroke="#FFEAAE"
-            stroke-width="2"
-            opacity="0.8"
-            aria-hidden="true"
-          />
-          <line
-            x1="50"
-            y1="50"
-            x2="50"
-            y2="70"
-            stroke="#FFEAAE"
-            stroke-width="2"
-            opacity="0.8"
-            aria-hidden="true"
-          />
-          <line
-            x1="50"
-            y1="50"
-            x2="30"
-            y2="50"
-            stroke="#FFEAAE"
-            stroke-width="2"
-            opacity="0.8"
-            aria-hidden="true"
-          />
-          <line
-            x1="50"
-            y1="50"
-            x2="36"
-            y2="36"
-            stroke="#FFEAAE"
-            stroke-width="2"
-            opacity="0.8"
-            aria-hidden="true"
-          />
-
-          <!-- Diagonal rays -->
-          <line
-            x1="50"
-            y1="50"
-            x2="57"
-            y2="36"
-            stroke="#FFEAAE"
-            stroke-width="1.5"
-            opacity="0.6"
-            aria-hidden="true"
-          />
-          <line
-            x1="50"
-            y1="50"
-            x2="64"
-            y2="43"
-            stroke="#FFEAAE"
-            stroke-width="1.5"
-            opacity="0.6"
-            aria-hidden="true"
-          />
-          <line
-            x1="50"
-            y1="50"
-            x2="64"
-            y2="57"
-            stroke="#FFEAAE"
-            stroke-width="1.5"
-            opacity="0.6"
-            aria-hidden="true"
-          />
-          <line
-            x1="50"
-            y1="50"
-            x2="57"
-            y2="64"
-            stroke="#FFEAAE"
-            stroke-width="1.5"
-            opacity="0.6"
-            aria-hidden="true"
-          />
-          <line
-            x1="50"
-            y1="50"
-            x2="36"
-            y2="57"
-            stroke="#FFEAAE"
-            stroke-width="1.5"
-            opacity="0.6"
-            aria-hidden="true"
-          />
-          <line
-            x1="50"
-            y1="50"
-            x2="36"
-            y2="43"
-            stroke="#FFEAAE"
-            stroke-width="1.5"
-            opacity="0.6"
-            aria-hidden="true"
-          />
-          <line
-            x1="50"
-            y1="50"
-            x2="43"
-            y2="36"
-            stroke="#FFEAAE"
-            stroke-width="1.5"
-            opacity="0.6"
-            aria-hidden="true"
-          />
-
-          <!-- Center -->
-          <circle cx="50" cy="50" r="4" fill="white" aria-hidden="true" />
-        </svg>
-        <!-- End of Sun flower -->
-
-        <a
-          class="group_anim_underl flex flex-col items-center justify-center space-y-2 hover:scale-95 hover:cursor-pointer transition-all duration-300"
-          :href="'mailto:bonnefousguilhem@gmail.com'"
-          target="_blank"
-        >
-          <div class="w-28 h-20 sm:w-32 sm:h-24 flex items-center justify-center">
-            <img
-              :src="mailImage"
-              class="max-w-full max-h-full object-contain hover:contrast-150 transition-all duration-500"
-              alt="Mail logo"
-            />
+          <div class="w-24 h-16 sm:w-32 sm:h-24 flex items-center hover:scale-95 justify-center">
+            <a href="mailto:bonnefousguilhem@gmail.com" target="_blank"
+              ><img
+                :src="mailImage"
+                class="max-w-full max-h-full object-contain hover:contrast-150 transition-all duration-500"
+                alt="Mail logo"
+            /></a>
           </div>
-          <p class="text-white text-sm sm:text-base animated_underline">
-            bonnefousguilhem @gmail.com
-          </p>
-        </a>
+          <button @click="copyMailToClipboard()" class="text-white text-sm sm:text-base">
+            <span v-if="!isCopied" class="animated_underline active:scale-75">{{
+              $t('about_copy')
+            }}</span>
+            <span v-else class="inline"
+              >{{ $t('about_copied') }}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5 inline ml-1 text-green-400"
+                aria-hidden="true"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+              </svg>
+            </span>
+          </button>
+        </div>
       </div>
     </div>
   </div>

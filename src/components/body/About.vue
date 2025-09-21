@@ -8,8 +8,12 @@ let about = ref(true)
 let about_animation = ref(true)
 
 const changeDisplayedObject = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
   about_animation.value = !about.value
-  setTimeout(() => (about.value = !about.value), 800)
+
+  setTimeout(() => {
+    about.value = !about.value
+  }, 800)
 }
 </script>
 
@@ -63,8 +67,16 @@ const changeDisplayedObject = () => {
     class="grid md:grid-cols-4 md:col-span-4 m-8 md:mb-12 overflow-x-hidden"
     :class="{ hidden: about }"
   >
+    <div class="md:mr-16 md:ml-4" :class="about ? 'hidden' : 'md:col-span-3'">
+      <div
+        class="h-full flex flex-col gap-4 justify-between"
+        :class="{ 'animate-text_animation': about_animation }"
+      >
+        <Skills />
+      </div>
+    </div>
     <div
-      class="mb-4 md:mb-0 md:col-span-1"
+      class="mt-4 md:mt-0 md:col-span-1"
       :class="{ hidden: about }"
       @click="changeDisplayedObject()"
     >
@@ -91,14 +103,6 @@ const changeDisplayedObject = () => {
             d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
           />
         </svg>
-      </div>
-    </div>
-    <div class="md:mr-16 md:ml-4" :class="about ? 'hidden' : 'md:col-span-3'">
-      <div
-        class="h-full flex flex-col gap-4 justify-between"
-        :class="{ 'animate-text_animation': about_animation }"
-      >
-        <Skills />
       </div>
     </div>
   </div>

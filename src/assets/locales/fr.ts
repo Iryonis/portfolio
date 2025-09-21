@@ -11,6 +11,8 @@ export default {
     "Je suis Guilhem BONNEFOUS, 22 ans, actuellement étudiant en 2e année de Master Génie Logiciel à l'Université de Bordeaux, FRANCE. Sur mon temps libre, j'aime lire des romans de fantaisie et de science-fiction, jouer seul ou avec des amis, avancer mes projets de programmation et rêver de chevaliers et de dragons. Concernant l'informatique, j'aime particulièrement le développement web et toute technologie permettant d'obtenir un résultat visuel et concret (vous l'aurez compris, je n'aime pas vraiment la théorie!).",
   about_text2:
     "Sur cette page, vous allez pouvoir découvrir mon parcours dans l'informatique, mes compétences ainsi que les liens vers mes réseaux. Vous pouvez également voir mes projets personnels, réalisés dans le cadre de mes études ou de mon temps libre, sur la page suivante.",
+  about_copy: 'Cliquer pour copier ',
+  about_copied: 'Copié !',
   skills: 'Compétences',
   see_more: 'En savoir plus...',
   tools: 'Outils',
@@ -20,9 +22,8 @@ export default {
   tier_1: "J'ai utilisé ces outils à plusieurs reprises ET de façon avancée...",
   tier_2: "J'ai utilisé ces outils à plusieurs reprises de façon basique...",
   tier_3: "J'ai déjà utilisé ces outils...",
-  title_text_skills: "En utilisant {lang}, j'ai...",
-  text_one_skills: 'réalisé {count} projet(s)',
-  text_two_skills: 'suivi {count} cours',
+  skills_auto: 'Auto-didacte',
+  skills_academic: "Étudié à l'université",
 
   // CAREER
 

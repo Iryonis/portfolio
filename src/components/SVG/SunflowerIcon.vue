@@ -1,0 +1,172 @@
+<script setup lang="ts"></script>
+
+<template>
+  <svg
+    class="h-52 w-20 hidden xl:inline-block"
+    preserveAspectRatio="xMinYMin meet"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <!-- Stem -->
+    <path
+      d="M 50 50 Q 10 82 35 114"
+      stroke="#FFEAAE"
+      stroke-width="2"
+      fill="none"
+      aria-hidden="true"
+    />
+    <path
+      d="M 35 114 Q 50 146 20 178"
+      stroke="#FFEAAE"
+      stroke-width="2"
+      fill="none"
+      aria-hidden="true"
+    />
+
+    <!-- Main rays -->
+    <line
+      x1="50"
+      y1="50"
+      x2="50"
+      y2="30"
+      stroke="#FFEAAE"
+      stroke-width="2"
+      opacity="0.8"
+      aria-hidden="true"
+    />
+    <line
+      x1="50"
+      y1="50"
+      x2="64"
+      y2="36"
+      stroke="#FFEAAE"
+      stroke-width="2"
+      opacity="0.8"
+      aria-hidden="true"
+    />
+    <line
+      x1="50"
+      y1="50"
+      x2="70"
+      y2="50"
+      stroke="#FFEAAE"
+      stroke-width="2"
+      opacity="0.8"
+      aria-hidden="true"
+    />
+    <line
+      x1="50"
+      y1="50"
+      x2="64"
+      y2="64"
+      stroke="#FFEAAE"
+      stroke-width="2"
+      opacity="0.8"
+      aria-hidden="true"
+    />
+    <line
+      x1="50"
+      y1="50"
+      x2="50"
+      y2="70"
+      stroke="#FFEAAE"
+      stroke-width="2"
+      opacity="0.8"
+      aria-hidden="true"
+    />
+    <line
+      x1="50"
+      y1="50"
+      x2="30"
+      y2="50"
+      stroke="#FFEAAE"
+      stroke-width="2"
+      opacity="0.8"
+      aria-hidden="true"
+    />
+    <line
+      x1="50"
+      y1="50"
+      x2="36"
+      y2="36"
+      stroke="#FFEAAE"
+      stroke-width="2"
+      opacity="0.8"
+      aria-hidden="true"
+    />
+
+    <!-- Diagonal rays -->
+    <line
+      x1="50"
+      y1="50"
+      x2="57"
+      y2="36"
+      stroke="#FFEAAE"
+      stroke-width="1.5"
+      opacity="0.6"
+      aria-hidden="true"
+    />
+    <line
+      x1="50"
+      y1="50"
+      x2="64"
+      y2="43"
+      stroke="#FFEAAE"
+      stroke-width="1.5"
+      opacity="0.6"
+      aria-hidden="true"
+    />
+    <line
+      x1="50"
+      y1="50"
+      x2="64"
+      y2="57"
+      stroke="#FFEAAE"
+      stroke-width="1.5"
+      opacity="0.6"
+      aria-hidden="true"
+    />
+    <line
+      x1="50"
+      y1="50"
+      x2="57"
+      y2="64"
+      stroke="#FFEAAE"
+      stroke-width="1.5"
+      opacity="0.6"
+      aria-hidden="true"
+    />
+    <line
+      x1="50"
+      y1="50"
+      x2="36"
+      y2="57"
+      stroke="#FFEAAE"
+      stroke-width="1.5"
+      opacity="0.6"
+      aria-hidden="true"
+    />
+    <line
+      x1="50"
+      y1="50"
+      x2="36"
+      y2="43"
+      stroke="#FFEAAE"
+      stroke-width="1.5"
+      opacity="0.6"
+      aria-hidden="true"
+    />
+    <line
+      x1="50"
+      y1="50"
+      x2="43"
+      y2="36"
+      stroke="#FFEAAE"
+      stroke-width="1.5"
+      opacity="0.6"
+      aria-hidden="true"
+    />
+
+    <!-- Center -->
+    <circle cx="50" cy="50" r="4" fill="white" aria-hidden="true" />
+  </svg>
+</template>

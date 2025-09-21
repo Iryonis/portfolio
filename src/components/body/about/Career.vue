@@ -2,7 +2,7 @@
 
 <template>
   <div
-    class="border rounded-b-lg md:rounded-br-none md:rounded-bl-lg border-beige shadow-lg shadow-black/70 bg-white/10"
+    class="border rounded-br-lg md:rounded-br-none md:rounded-bl-lg border-beige shadow-lg shadow-black/70 bg-white/10"
   >
     <div class="m-4">
       <div class="text-white font-bold text-lg md:text-2xl ml-4 uppercase">{{ $t('career') }}</div>

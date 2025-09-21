@@ -21,29 +21,34 @@ import intellijImg from '@/assets/img/logo/intellijidea.webp'
 import cppImg from '@/assets/img/logo/c++.svg'
 import luaImg from '@/assets/img/logo/lua.webp'
 
+/*
+formation = 0 : Self-taught
+formation = 1 : Studied at university
+formation = 2 : Both
+*/
 export default {
   tier_1: [
-    { src: vanillaImg, lang: 'Vanilla web languages', projects_number: 5, courses_number: 1 },
-    { src: tailwindImg, lang: 'Tailwind', projects_number: 3, courses_number: 0 },
-    { src: vueImg, lang: 'Vue.js', projects_number: 3, courses_number: 0 },
-    { src: vscodeImg, lang: 'Visual Studio Code', projects_number: 11, courses_number: 0 }
+    { src: vanillaImg, lang: 'Vanilla Web', formation: 2 },
+    { src: tailwindImg, lang: 'Tailwind', formation: 0 },
+    { src: vueImg, lang: 'Vue.js', formation: 2 },
+    { src: vscodeImg, lang: 'VS Code', formation: 2 }
   ],
   tier_2: [
-    { src: typescriptImg, lang: 'Typescript', projects_number: 2, courses_number: 0 },
-    { src: gitImg, lang: 'Git', projects_number: 11, courses_number: 0 },
-    { src: cImg, lang: 'C', projects_number: 4, courses_number: 6 },
-    { src: bashImg, lang: 'Bash', projects_number: 0, courses_number: 0 },
-    { src: nodeImg, lang: 'Node JS', projects_number: 2, courses_number: 0 },
-    { src: javaImg, lang: 'Java', projects_number: 3, courses_number: 2 },
-    { src: pythonImg, lang: 'Python', projects_number: 3, courses_number: 4 },
-    { src: ocamlImg, lang: 'OCaml', projects_number: 1, courses_number: 3 }
+    { src: typescriptImg, lang: 'Typescript', formation: 2 },
+    { src: gitImg, lang: 'Git', formation: 2 },
+    { src: cImg, lang: 'C', formation: 1 },
+    { src: bashImg, lang: 'Bash', formation: 1 },
+    { src: nodeImg, lang: 'Node JS', formation: 2 },
+    { src: javaImg, lang: 'Java', formation: 1 },
+    { src: pythonImg, lang: 'Python', formation: 2 },
+    { src: ocamlImg, lang: 'OCaml', formation: 1 }
   ],
   tier_3: [
-    { src: angularImg, lang: 'Angular', projects_number: 1, courses_number: 0 },
-    { src: mongodbImg, lang: 'MongoDB', projects_number: 1, courses_number: 0 },
-    { src: parcelImg, lang: 'Parceljs', projects_number: 1, courses_number: 0 },
-    { src: intellijImg, lang: "IntelliJ'IDEA", projects_number: 1, courses_number: 0 },
-    { src: cppImg, lang: 'C++', projects_number: 1, courses_number: 1 },
-    { src: luaImg, lang: 'Lua', projects_number: 1, courses_number: 0 }
+    { src: angularImg, lang: 'Angular', formation: 2 },
+    { src: mongodbImg, lang: 'MongoDB', formation: 2 },
+    { src: parcelImg, lang: 'Parceljs', formation: 2 },
+    { src: intellijImg, lang: "IntelliJ'IDEA", formation: 1 },
+    { src: cppImg, lang: 'C++', formation: 1 },
+    { src: luaImg, lang: 'Lua', formation: 2 }
   ]
 }

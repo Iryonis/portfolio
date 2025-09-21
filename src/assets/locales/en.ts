@@ -11,6 +11,8 @@ export default {
     "I am Guilhem BONNEFOUS, 22 years old, currently a second year student in a Software Engineering Master's degree at the University of Bordeaux, FRANCE. In my free time, I enjoy reading fantasy and science fiction, gaming alone or with friends, progressing my programming projects and dreaming of knights and dragons. Concerning IT, I particularly like web development and any technology with a visual and concrete result (you will have understood, I don't really like theory!).",
   about_text2:
     'On this page, you will be able to discover my background in IT, my skills as well as links to my networks. You can also see my personal projects, carried out as part of my studies or in my free time, on the next page.',
+  about_copy: 'Click to copy',
+  about_copied: 'Copied!',
   skills: 'Skills',
   see_more: 'See more...',
   tools: 'Tools',
@@ -20,9 +22,8 @@ export default {
   tier_1: 'I have used these tools several times AND in an advanced way...',
   tier_2: 'I have used these tools several times in a basic way...',
   tier_3: 'I have used these tools once before...',
-  title_text_skills: 'Using {lang}, I...',
-  text_one_skills: 'did {count} project(s)',
-  text_two_skills: 'followed {count} course(s)',
+  skills_auto: 'Self-taught',
+  skills_academic: 'Studied at university',
 
   career: 'Career',
   colon: ':',
