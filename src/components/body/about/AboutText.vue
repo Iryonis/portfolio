@@ -48,7 +48,7 @@ const copyMailToClipboard = async () => {
             <img
               :src="githubImage"
               class="max-w-full max-h-full object-contain hover:invert transition-all duration-500"
-              alt="GitHub logo"
+              alt="The GitHub logo ; a transparent octocat on a black background. Click on it to open my GitHub profile."
             />
           </div>
           <p class="text-white text-sm sm:text-base animated_underline">Github</p>
@@ -65,7 +65,7 @@ const copyMailToClipboard = async () => {
             <img
               :src="linkedinImage"
               class="max-w-full max-h-full object-contain hover:contrast-200 transition-all duration-500"
-              alt="LinkedIn logo"
+              alt="The LinkedIn logo ; a white 'i' and 'n' on a blue background. Click on it to open my LinkedIn profile."
             />
           </div>
           <p class="text-white text-sm sm:text-base animated_underline">LinkedIn</p>
@@ -81,13 +81,11 @@ const copyMailToClipboard = async () => {
               ><img
                 :src="mailImage"
                 class="max-w-full max-h-full object-contain hover:contrast-150 transition-all duration-500"
-                alt="Mail logo"
+                alt="The Gmail logo ; an envelope with a red M on it. Click on it to open your mail client with my email already filled in."
             /></a>
           </div>
           <button @click="copyMailToClipboard()" class="text-white text-sm sm:text-base">
-            <span v-if="!isCopied" class="animated_underline active:scale-75">{{
-              $t('about_copy')
-            }}</span>
+            <span v-if="!isCopied">{{ $t('about_copy') }}</span>
             <span v-else class="inline"
               >{{ $t('about_copied') }}
               <svg

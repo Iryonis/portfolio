@@ -122,6 +122,7 @@ onUnmounted(() => {
           <svg
             width="100%"
             height="100%"
+            aria-hidden="true"
             viewBox="0 0 10 530"
             xmlns="http://www.w3.org/2000/svg"
             preserveAspectRatio="xMinYMin meet"

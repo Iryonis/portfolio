@@ -3,6 +3,7 @@
 <template>
   <svg
     class="h-52 w-20 hidden xl:inline-block"
+    aria-hidden="true"
     preserveAspectRatio="xMinYMin meet"
     xmlns="http://www.w3.org/2000/svg"
   >

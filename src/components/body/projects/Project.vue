@@ -61,13 +61,13 @@ const toggleExpand = () => {
         :href="site"
         target="_blank"
         rel="noopener noreferrer"
-        title="Link to the project site"
-        aria-label="Link to the project site"
+        title="Link to the project website"
+        aria-label="Link to the project website."
         class="flex justify-center items-center w-full bg-beige"
       >
         <img
           :src="image"
-          aria-label="Project image"
+          aria-label="An image representing the project, click on it to open the project website."
           class="hover:scale-95 transition-all max-h-60 duration-500 ease-in-out"
         />
       </a>
@@ -75,7 +75,7 @@ const toggleExpand = () => {
       <div v-else class="flex justify-center items-center w-full bg-beige">
         <img
           :src="image"
-          aria-label="Project image"
+          aria-label="An image representing the project."
           class="cursor-default max-h-64 hover:max-h-96 transition-all duration-1000 ease-in-out"
         />
       </div>

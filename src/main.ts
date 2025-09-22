@@ -7,9 +7,21 @@ import { createI18n } from 'vue-i18n'
 import messagesEn from './assets/locales/en'
 import messagesFr from './assets/locales/fr'
 
+const detectLanguage = (): string => {
+  const savedLang = localStorage.getItem('preferred-language')
+  if (savedLang && ['en', 'fr'].includes(savedLang)) {
+    return savedLang
+  } else if (navigator.language.startsWith('fr')) {
+    return 'fr'
+  } else {
+    return 'en'
+  }
+}
+
 const i18n = createI18n({
   legacy: false,
-  locale: 'en',
+  locale: detectLanguage(),
+  fallbackLocale: 'en',
   messages: { en: messagesEn, fr: messagesFr }
 })
 

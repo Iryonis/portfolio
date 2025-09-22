@@ -9,7 +9,9 @@ const route = useRoute()
  * @param {string} path - The path to compare with the current route
  */
 const styleCurrentRoute = (path: string) => {
-  return route.name === path ? 'text-beige border-beige' : 'border-transparent'
+  return route.name === path
+    ? 'text-beige border-beige'
+    : 'border-transparent hover:animate-border_shining'
 }
 </script>
 
@@ -18,21 +20,21 @@ const styleCurrentRoute = (path: string) => {
     <div class="grid grid-cols-3 sm:grid-cols-7 items-center text-center text-white">
       <RouterLink
         :to="{ name: 'home' }"
-        class="w-24 p-0.5 sm:p-1 md:p-2 md:px-4 text-sm sm:text-base border hover:border-beige hover:animate-border_shining rounded-l-lg"
+        class="w-24 p-0.5 sm:p-1 md:p-2 md:px-4 text-sm sm:text-base border hover:border-beige rounded-l-lg"
         :class="styleCurrentRoute('home')"
         >{{ $t('home_link') }}</RouterLink
       >
       <hr class="hidden sm:block col-span-2 border-beige border" />
       <RouterLink
         :to="{ name: 'about' }"
-        class="w-24 p-0.5 sm:p-1 md:p-2 md:px-4 text-sm sm:text-base border hover:border-beige hover:animate-border_shining"
+        class="w-24 p-0.5 sm:p-1 md:p-2 md:px-4 text-sm sm:text-base border hover:border-beige"
         :class="styleCurrentRoute('about')"
         >{{ $t('about_link') }}</RouterLink
       >
       <hr class="hidden sm:block col-span-2 border-beige border" />
       <RouterLink
         :to="{ name: 'projects' }"
-        class="w-24 p-0.5 sm:p-1 md:p-2 md:px-4 text-sm sm:text-base border hover:border-beige hover:animate-border_shining rounded-r-lg"
+        class="w-24 p-0.5 sm:p-1 md:p-2 md:px-4 text-sm sm:text-base border hover:border-beige rounded-r-lg"
         :class="styleCurrentRoute('projects')"
         >{{ $t('projects_link') }}</RouterLink
       >

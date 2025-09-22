@@ -1,7 +1,11 @@
 <script setup lang="ts"></script>
 
 <template>
-  <svg class="h-52 w-20 hidden xl:inline-block" xmlns="http://www.w3.org/2000/svg">
+  <svg
+    class="h-52 w-20 hidden xl:inline-block"
+    aria-hidden="true"
+    xmlns="http://www.w3.org/2000/svg"
+  >
     <path
       d="M 20 50 Q 50 82 35 114"
       stroke="#FFEAAE"
