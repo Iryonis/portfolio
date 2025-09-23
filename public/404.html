@@ -2,30 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Portfolio - Guilhem BONNEFOUS</title>
-    <script>
-      // GitHub Pages SPA redirect
-      const pathSegmentsToKeep = 1
+    <title>Guilhem BONNEFOUS | Full-stack Developer & Software Engineer</title>
 
-      const l = window.location
-
-      // Diviser le pathname en segments
-      const pathSegments = l.pathname.split('/').slice(1)
-
-      const redirect =
-        l.protocol +
-        '//' +
-        l.hostname +
-        (l.port ? ':' + l.port : '') +
-        '/' +
-        pathSegments.slice(0, pathSegmentsToKeep).join('/') +
-        '/?/' +
-        pathSegments.slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-
-      l.replace(redirect)
-    </script>
+    <!-- Github Pages SPA redirect -->
+    <script src="/portfolio/github-pages-spa.js"></script>
   </head>
   <body>
     <p>Redirecting...</p>

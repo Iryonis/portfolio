@@ -17,9 +17,9 @@ const isAboutPage = () => {
 
 <template>
   <div class="w-full grid md:grid-cols-5 justify-center">
-    <div class="block m-8 mt-16 md:hidden"><Navbar next="/projects" /></div>
+    <div class="block m-8 mt-16 md:hidden"><Navbar /></div>
     <div class="hidden md:block md:col-span-1"><Sidebar /></div>
     <RouterView />
   </div>
-  <div class="mb-24"><NextButton v-if="isAboutPage()" destination="/projects" /></div>
+  <div class="mb-24"><NextButton v-if="isAboutPage()" destination="/app/projects" /></div>
 </template>

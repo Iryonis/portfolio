@@ -2,7 +2,7 @@
 import Project from './projects/Project.vue'
 import { useI18n } from 'vue-i18n'
 
-// Définir l'interface pour un projet
+// Define the structure of a ProjectData object
 interface ProjectData {
   title: string
   date: string

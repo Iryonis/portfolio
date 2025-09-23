@@ -46,6 +46,9 @@ const _ = defineProps({
 
 const isExpanded = ref(false)
 
+/**
+ * Toggle the expansion state of the project description
+ */
 const toggleExpand = () => {
   isExpanded.value = !isExpanded.value
 }
@@ -76,7 +79,7 @@ const toggleExpand = () => {
         <img
           :src="image"
           aria-label="An image representing the project."
-          class="cursor-default max-h-64 hover:max-h-96 transition-all duration-1000 ease-in-out"
+          class="cursor-default max-h-60 hover:max-h-80 transition-all duration-1000 ease-in-out"
         />
       </div>
 

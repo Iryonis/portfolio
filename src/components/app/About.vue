@@ -7,6 +7,9 @@ import Career from './about/Career.vue'
 let about = ref(true)
 let about_animation = ref(true)
 
+/**
+ * Change the displayed object (About <-> Skills) with an animation
+ */
 const changeDisplayedObject = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' })
   about_animation.value = !about.value

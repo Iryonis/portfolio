@@ -2,12 +2,15 @@
 import githubImage from '@/assets/img/logo/github.svg'
 import linkedinImage from '@/assets/img/logo/linkedin.webp'
 import mailImage from '@/assets/img/logo/gmail.webp'
-import SunflowerIcon from '@/components/SVG/SunflowerIcon.vue'
-import PlantIcon from '@/components/SVG/PlantIcon.vue'
+import SunflowerIcon from '@/components/app/about/SVG/SunflowerIcon.vue'
+import PlantIcon from '@/components/app/about/SVG/PlantIcon.vue'
 import { ref } from 'vue'
 
 let isCopied = ref(false)
 
+/**
+ * Copy the email address to the clipboard and show a temporary confirmation message
+ */
 const copyMailToClipboard = async () => {
   try {
     await navigator.clipboard.writeText('bonnefousguilhem@gmail.com')

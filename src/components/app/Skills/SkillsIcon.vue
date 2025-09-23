@@ -19,6 +19,9 @@ const props = defineProps({
 
 const { t: $t } = useI18n()
 
+/**
+ * Computed property to get the formation type display text based on the formation prop
+ */
 const formationDisplay = computed(() => {
   const auto = $t('skills_auto')
   const academic = $t('skills_academic')

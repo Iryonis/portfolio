@@ -105,5 +105,5 @@ const writeText = (lang: string) => {
     </div>
   </div>
   <Navbar />
-  <NextButton destination="/about" />
+  <NextButton destination="/app/about" />
 </template>

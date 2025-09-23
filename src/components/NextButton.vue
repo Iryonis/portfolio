@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useRouter } from 'vue-router'
+import { RouterLink } from 'vue-router'
 
 const props = defineProps({
   destination: {
@@ -7,19 +7,13 @@ const props = defineProps({
     required: true
   }
 })
-
-const router = useRouter()
-
-const handleNavigation = () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' })
-  router.push(props.destination)
-}
 </script>
 
 <template>
   <div class="z-0">
-    <button
-      @click="handleNavigation()"
+    <RouterLink
+      :to="props.destination"
+      aria-label="Next page button"
       class="group absolute z-10 left-1/2 transform -translate-x-1/2 -translate-y-2 p-1 md:p-2 font-semibold border border-b-[3px] border-b-beige/50 border-r-4 border-r-beige/50 rounded-lg border-beige text-beige hover:animate-button_shining shadow-lg shadow-black/50 active:shadow-none active:scale-90 transition-all duration-200 ease-in-out"
     >
       <svg
@@ -37,6 +31,6 @@ const handleNavigation = () => {
           d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3"
         />
       </svg>
-    </button>
+    </RouterLink>
   </div>
 </template>
