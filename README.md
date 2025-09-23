@@ -13,6 +13,10 @@ The website is available in:
 - English - Default language
 - Français - French translation
 
+## License
+
+[GPL 3.0](LICENSE)
+
 ## Author
 
 Guilhem BONNEFOUS
