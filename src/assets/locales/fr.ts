@@ -54,130 +54,114 @@ export default {
     1: 'Deuxième année de master en informatique... (en cours)'
   },
 
-  // PROJECTS
+  // PROJECTS TEXT
 
   project_title: 'Projets',
   project_more: 'En savoir plus sur Github',
   project_site: 'Voir le site',
   show_more: 'Voir plus',
   show_less: 'Voir moins',
-  projects: [
-    {
-      title: 'SWYT : Stop Wasting Your Time',
-      date: 'Été 2025',
-      image: projectsImages.swyt,
-      description:
-        "SWYT (Stop Wasting Your Time) est une extension Chrome, développée en Javascript. Elle permet de limiter le temps passé chaque jour à visionner des YouTube Shorts. L'utilisateur peut choisir un temps quotidien à ne pas dépasser, et l'extension va chronométrer le temps passé à visionner des YouTube Shorts, et si ce temps est dépassé, elle va rediriger l'utilisateur et l'empêcher de visionner plus de Shorts jusqu'au lendemain. C'est un projet personnel me permettant à la fois de développer un outil m'étant utile, et à la fois de découvrir le développement d'extension Chrome (et donc les manifest et l'API Chrome).",
-      github: 'https://github.com/Iryonis/stop-wasting-your-time',
-      site: '',
-      type: 'Extension de navigateur',
-      tool: 'HTML, CSS & JavaScript',
-      lang: 'Anglais & français',
-      access: 'Accessibilité ? Oui'
-    },
-    {
-      title: 'EMH : Earthen Master Hammer Addon',
-      date: 'Printemps 2025',
-      image: projectsImages.emh,
-      description:
-        "Earthen Master Hammer Addon (EMH) est un addon pour le jeu vidéo World of Warcraft, développé en Lua. Il permet de simplifier l'utilisation de l'objet de forgeron Marteau de maître terrestre. C'était mon premier vrai projet personnel et la première fois que j'ai programmé un addon pour Wow (j'ai donc découvert à la fois le langage Lua et l'API de Wow). Ce fut au début un peu compliqué à cause du manque de documentation et de tutoriels poussés, mais ce fut très gratifiant de réussir à créer un addon m'étant utile au quotidien en jeu.",
-      github: 'https://github.com/Iryonis/EarthenMasterHammerAddon',
-      site: 'https://www.curseforge.com/wow/addons/emh',
-      type: 'Addon pour jeu vidéo',
-      tool: 'Lua',
-      lang: 'Anglais, français & plus',
-      access: 'Accessibilité ? Non'
-    },
-    {
-      title: 'LaBRI GHG Viewer',
-      date: 'Juin 2023 à Juin 2024',
-      image: projectsImages.ghgViewer,
-      description:
-        "Site web réalisé pour le LaBRI (Laboratoire Bordelais de Recherche en Informatique) durant un stage d'un mois en juin 2023, puis continué en job étudiant à temps partiel durant l'année universitaire 2023-2024. Le but était de créer un site web permettant aux membres du laboratoire de visionner les émissions de CO2 qu'ils ont générées par leurs déplacements professionnels. Le but était également d'organiser des données provenant de plusieurs fichiers .csv en une sorte de base de données locales, grâce au langage Python. Une fois cela fait, j'ai donc pu codé le site web et j'ai notamment utilisé des technologies comme Tailwind, Parcel ou encore ChartJS. Le site permet donc de visualiser les émissions globales, par personne, par département et par équipe, ainsi que de permettre de faire des prévisions pour les années à venir. J'ai codé le site et les scripts Python entièrement seul, avec l'aide et les conseils de deux tuteurs. Ce projet fut très enrichissant, car il m'a permis d'améliorer mes compétences en développement web et de créer un projet de A à Z, en suivant un cahier des charges et les retours de mes tuteurs, chaque semaine. Afin de ne pas révéler de données sensibles, le site et le Github sont en privé, et l'image est censurée.",
-      github: '',
-      site: '',
-      type: 'Site web & Scripts',
-      tool: 'HTML, Tailwind CSS, Javascript, Python & Parcel',
-      lang: 'Anglais',
-      access: 'Accessibilité ? Oui'
-    },
-    {
-      title: 'Takuzu, version site web',
-      date: 'De mars à juin 2023',
-      image: projectsImages.takuzuWeb,
-      description:
-        "Takuzu est un projet réalisé par quatre étudiants lors de leur deuxième année en informatique. L'objectif était de créer un site web permettant à l'utilisateur de jouer au jeu Takuzu (également connu sous le nom de Unruly ou Binairo), codé précédemment en C. Il s'agit de la troisième partie du projet (après les versions en terminal et en interface graphique). J'ai codé la majeure partie du site web, et c'était la première fois que je mettais en place un mode nuit fait maison.",
-      github: 'https://github.com/Iryonis/takuzu-06c',
-      site: 'https://guilhem-bonnefous.emi.u-bordeaux.fr/refeartgui2306c/',
-      type: 'Jeu vidéo sur site web',
-      tool: 'HTML, CSS & JavaScript',
-      lang: 'Anglais',
-      access: 'Accessibilité ? Oui'
-    },
-    {
-      title: 'Takuzu, version bureau',
-      date: 'De septembre 2022 à mars 2023',
-      image: projectsImages.takuzuDesktop,
-      description:
-        "Takuzu est un projet réalisé par quatre étudiants lors de leur deuxième année en informatique. L'objectif était de créer le jeu Takuzu (également connu sous le nom de Unruly ou Binairo) en utilisant le langage C, et d'explorer les bibliothèques et outils utilisés dans le développement de projets. Il s'agit des première et deuxième parties du projet, que l'on peut résumer comme étant 'jeu en terminal' et 'jeu avec interface graphique'. L'interface graphique a été réalisée avec un thème Le Seigneur des Anneaux en tête, et tous les assets graphiques ont été faits à la main par un ami (sauf le fond).",
-      github: 'https://github.com/Iryonis/takuzu-06c',
-      site: '',
-      type: 'Jeu vidéo sur ordinateur',
-      tool: 'C, Cmake & SDL2',
-      lang: 'Anglais',
-      access: 'Accessibilité ? Non'
-    },
-    {
-      title: 'NDI2023',
-      date: '7 et 8 décembre 2023',
-      image: projectsImages.ndi2023,
-      description:
-        "Site web réalisé pour la Nuit de l'Info 2023, par l'équipe \"Gragas 404 Not Found\". La Nuit de l'Info est un événement annuel organisé en décembre dans les universités françaises qui dure une nuit et où le but est de coder un site web avec des défis, de s'amuser et de rencontrer des entreprises. Le sujet de cette année était \"Faire face au changement climatique : le vrai du faux\", et était parrainé par l'association Réseau Action Climat.",
-      github: 'https://github.com/Roirtur/NDI2023',
-      site: 'https://roirtur.github.io/NDI2023/',
-      type: 'Site web',
-      tool: 'Angular',
-      lang: 'Français',
-      access: 'Accessibilité ? Non'
-    },
-    {
-      title: 'UBGarden',
-      date: 'Mai à Juin 2023',
-      image: projectsImages.ubgarden,
-      description:
-        "UBGarden est un projet Java réalisé en deuxième année d'informatique à l'Université de Bordeaux, lors de l'Unité d'Enseignement (UE) Programmation Orientée Objet. Il consista à créer un petit jeu vidéo 2D type \"Zelda\", à partir d'un code de base fourni. Il fut précédé de plusieurs semaines de tutoriaux pour apprendre à développer en Java et à utiliser IntelliJ Idea et Gradle, et a duré quelques semaines. Ce projet fut notre première approche de Java et de la Programmation Orientée Objet.",
-      github: 'https://github.com/Iryonis/poo-project',
-      site: '',
-      type: 'Jeu vidéo sur ordinateur',
-      tool: 'Java, Gradle & IntelliJ Idea',
-      lang: 'Français',
-      access: 'Accessibilité ? Non'
-    },
-    {
-      title: 'Wiki For Honor',
-      date: 'Décembre 2022',
-      image: projectsImages.wikiFH,
-      description:
-        "WikiFH (pour 'Wiki For Honor') est un site web créé par un étudiant en informatique durant sa deuxième année à l'université. C'était un petit projet visant à enseigner aux étudiants comment créer un site web avec des technologies de base telles que HTML, CSS, Javascript et PHP. J'ai décidé de créer un site web en l'honneur de For Honor, un jeu créé par Ubisoft, que j'aime beaucoup. Sa réalisation est très basique, mais c'était le premier site web sérieux que j'ai réalisé.",
-      github: 'https://github.com/Iryonis/wikiFH',
-      site: 'https://guilhem-bonnefous.emi.u-bordeaux.fr/Reseau/index.html',
-      type: 'Site web',
-      tool: 'HTML, CSS, JavaScript & PHP',
-      lang: 'Français',
-      access: 'Accessibilité ? Non'
-    },
-    {
-      title: 'VideoTracker',
-      date: 'Avril 2022',
-      image: projectsImages.videotracker,
-      description:
-        "Videotracker est un projet Python développé par deux étudiants lors de leur première année d'études en informatique. Il respecte un ensemble de spécifications incluant des exigences telles que l'affichage de vidéo, la pause, la navigation image par image, le dessin de points sur la vidéo et la création d'un fichier CSV pour montrer l'évolution de ces points. Le projet a été réalisé en suivant les méthodologies SCRUM, visant à familiariser les étudiants avec les principes de gestion de projet agile.",
-      github: 'https://github.com/Iryonis/videotracker',
-      site: '',
-      type: 'Application de bureau',
-      tool: 'Python',
-      lang: 'Français',
-      access: 'Accessibilité ? Non'
-    }
-  ]
+
+  // PROJECTS
+
+  swyt: {
+    title: 'SWYT : Stop Wasting Your Time',
+    date: 'Été 2025',
+    description:
+      "SWYT (Stop Wasting Your Time) est une extension Chrome, développée en Javascript. Elle permet de limiter le temps passé chaque jour à visionner des YouTube Shorts. L'utilisateur peut choisir un temps quotidien à ne pas dépasser, et l'extension va chronométrer le temps passé à visionner des YouTube Shorts, et si ce temps est dépassé, elle va rediriger l'utilisateur et l'empêcher de visionner plus de Shorts jusqu'au lendemain. C'est un projet personnel me permettant à la fois de développer un outil m'étant utile, et à la fois de découvrir le développement d'extension Chrome (et donc les manifest et l'API Chrome).",
+    type: 'Extension de navigateur',
+    tool: 'HTML, CSS & JavaScript',
+    lang: 'Anglais & français',
+    access: 'Accessibilité ? Oui'
+  },
+  emh: {
+    title: 'EMH : Earthen Master Hammer Addon',
+    date: 'Printemps 2025',
+    description:
+      "Earthen Master Hammer Addon (EMH) est un addon pour le jeu vidéo World of Warcraft, développé en Lua. Il permet de simplifier l'utilisation de l'objet de forgeron Marteau de maître terrestre. C'était mon premier vrai projet personnel et la première fois que j'ai programmé un addon pour Wow (j'ai donc découvert à la fois le langage Lua et l'API de Wow). Ce fut au début un peu compliqué à cause du manque de documentation et de tutoriels poussés, mais ce fut très gratifiant de réussir à créer un addon m'étant utile au quotidien en jeu.",
+    type: 'Addon pour jeu vidéo',
+    tool: 'Lua',
+    lang: 'Anglais, français & plus',
+    access: 'Accessibilité ? Non'
+  },
+  portfolio: {
+    title: 'Portfolio',
+    date: '2024 à 2025+',
+    description:
+      "Mon portfolio personnel, que vous êtes en train de visiter ! Il a été développé en Vue avec TypeScript, et utilise Tailwind CSS (v3) pour le style. J'ai décidé de créer un portfolio pour présenter mes projets et mon parcours, et pour m'entraîner à utiliser Vue et TypeScript. Le site est entièrement responsive et accessible, en anglais et en français, et tout a été codé par moi-même, y compris les illustrations SVG (bien que j'ai reçu de l'aide de Copilot).",
+    type: 'Site web',
+    tool: 'Vue, TypeScript & Tailwind CSS',
+    lang: 'Anglais & français',
+    access: 'Accessibilité ? Oui'
+  },
+  ghg_viewer: {
+    title: 'LaBRI GHG Viewer',
+    date: 'Juin 2023 à Juin 2024',
+    description:
+      "Site web réalisé pour le LaBRI (Laboratoire Bordelais de Recherche en Informatique) durant un stage d'un mois en juin 2023, puis continué en job étudiant à temps partiel durant l'année universitaire 2023-2024. Le but était de créer un site web permettant aux membres du laboratoire de visionner les émissions de CO2 qu'ils ont générées par leurs déplacements professionnels. Le but était également d'organiser des données provenant de plusieurs fichiers .csv en une sorte de base de données locales, grâce au langage Python. Une fois cela fait, j'ai donc pu codé le site web et j'ai notamment utilisé des technologies comme Tailwind, Parcel ou encore ChartJS. Le site permet donc de visualiser les émissions globales, par personne, par département et par équipe, ainsi que de permettre de faire des prévisions pour les années à venir. J'ai codé le site et les scripts Python entièrement seul, avec l'aide et les conseils de deux tuteurs. Ce projet fut très enrichissant, car il m'a permis d'améliorer mes compétences en développement web et de créer un projet de A à Z, en suivant un cahier des charges et les retours de mes tuteurs, chaque semaine. Afin de ne pas révéler de données sensibles, le site et le Github sont en privé, et l'image est censurée.",
+    type: 'Site web & Scripts',
+    tool: 'HTML, Tailwind CSS, Javascript, Python & Parcel',
+    lang: 'Anglais',
+    access: 'Accessibilité ? Oui'
+  },
+  takuzu_web: {
+    title: 'Takuzu, version site web',
+    date: 'De mars à juin 2023',
+    description:
+      "Takuzu est un projet réalisé par quatre étudiants lors de leur deuxième année en informatique. L'objectif était de créer un site web permettant à l'utilisateur de jouer au jeu Takuzu (également connu sous le nom de Unruly ou Binairo), codé précédemment en C. Il s'agit de la troisième partie du projet (après les versions en terminal et en interface graphique). J'ai codé la majeure partie du site web, et c'était la première fois que je mettais en place un mode nuit fait maison.",
+    type: 'Jeu vidéo sur site web',
+    tool: 'HTML, CSS & JavaScript',
+    lang: 'Anglais',
+    access: 'Accessibilité ? Oui'
+  },
+  takuzu_desktop: {
+    title: 'Takuzu, version bureau',
+    date: 'De septembre 2022 à mars 2023',
+    description:
+      "Takuzu est un projet réalisé par quatre étudiants lors de leur deuxième année en informatique. L'objectif était de créer le jeu Takuzu (également connu sous le nom de Unruly ou Binairo) en utilisant le langage C, et d'explorer les bibliothèques et outils utilisés dans le développement de projets. Il s'agit des première et deuxième parties du projet, que l'on peut résumer comme étant 'jeu en terminal' et 'jeu avec interface graphique'. L'interface graphique a été réalisée avec un thème Le Seigneur des Anneaux en tête, et tous les assets graphiques ont été faits à la main par un ami (sauf le fond).",
+    type: 'Jeu vidéo sur ordinateur',
+    tool: 'C, Cmake & SDL2',
+    lang: 'Anglais',
+    access: 'Accessibilité ? Non'
+  },
+  ndi2023: {
+    title: 'NDI2023',
+    date: '7 et 8 décembre 2023',
+    description:
+      "Site web réalisé pour la Nuit de l'Info 2023, par l'équipe \"Gragas 404 Not Found\". La Nuit de l'Info est un événement annuel organisé en décembre dans les universités françaises qui dure une nuit et où le but est de coder un site web avec des défis, de s'amuser et de rencontrer des entreprises. Le sujet de cette année était \"Faire face au changement climatique : le vrai du faux\", et était parrainé par l'association Réseau Action Climat.",
+    type: 'Site web',
+    tool: 'Angular',
+    lang: 'Français',
+    access: 'Accessibilité ? Non'
+  },
+  ubgarden: {
+    title: 'UBGarden',
+    date: 'Mai à Juin 2023',
+    description:
+      "UBGarden est un projet Java réalisé en deuxième année d'informatique à l'Université de Bordeaux, lors de l'Unité d'Enseignement (UE) Programmation Orientée Objet. Il consista à créer un petit jeu vidéo 2D type \"Zelda\", à partir d'un code de base fourni. Il fut précédé de plusieurs semaines de tutoriaux pour apprendre à développer en Java et à utiliser IntelliJ Idea et Gradle, et a duré quelques semaines. Ce projet fut notre première approche de Java et de la Programmation Orientée Objet.",
+    type: 'Jeu vidéo sur ordinateur',
+    tool: 'Java, Gradle & IntelliJ Idea',
+    lang: 'Français',
+    access: 'Accessibilité ? Non'
+  },
+  wiki_fh: {
+    title: 'Wiki For Honor',
+    date: 'Décembre 2022',
+    description:
+      "WikiFH (pour 'Wiki For Honor') est un site web créé par un étudiant en informatique durant sa deuxième année à l'université. C'était un petit projet visant à enseigner aux étudiants comment créer un site web avec des technologies de base telles que HTML, CSS, Javascript et PHP. J'ai décidé de créer un site web en l'honneur de For Honor, un jeu créé par Ubisoft, que j'aime beaucoup. Sa réalisation est très basique, mais c'était le premier site web sérieux que j'ai réalisé.",
+    type: 'Site web',
+    tool: 'HTML, CSS, JavaScript & PHP',
+    lang: 'Français',
+    access: 'Accessibilité ? Non'
+  },
+  videotracker: {
+    title: 'VideoTracker',
+    date: 'Avril 2022',
+    description:
+      "Videotracker est un projet Python développé par deux étudiants lors de leur première année d'études en informatique. Il respecte un ensemble de spécifications incluant des exigences telles que l'affichage de vidéo, la pause, la navigation image par image, le dessin de points sur la vidéo et la création d'un fichier CSV pour montrer l'évolution de ces points. Le projet a été réalisé en suivant les méthodologies SCRUM, visant à familiariser les étudiants avec les principes de gestion de projet agile.",
+    type: 'Application de bureau',
+    tool: 'Python',
+    lang: 'Français',
+    access: 'Accessibilité ? Non'
+  }
 }

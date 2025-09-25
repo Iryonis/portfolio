@@ -1,23 +1,8 @@
 <script setup lang="ts">
 import Project from './projects/Project.vue'
-import { useI18n } from 'vue-i18n'
+import { projectsData } from './projects/ProjectsData'
 
-// Define the structure of a ProjectData object
-interface ProjectData {
-  title: string
-  date: string
-  image: string
-  description: string
-  github: string
-  site?: string
-  type: string
-  tool: string
-  lang: string
-  access: string
-}
-
-const { tm } = useI18n()
-const projects = tm('projects') as ProjectData[]
+const projects = projectsData
 </script>
 
 <template>
@@ -33,17 +18,10 @@ const projects = tm('projects') as ProjectData[]
     </div>
     <Project
       v-for="project in projects"
-      :key="project.title"
-      :title="project.title"
-      :date="project.date"
+      :id="project.id"
       :image="project.image"
-      :description="project.description"
       :github="project.github"
       :site="project.site"
-      :type="project.type"
-      :tool="project.tool"
-      :lang="project.lang"
-      :access="project.access"
     />
   </div>
 </template>

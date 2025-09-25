@@ -2,19 +2,11 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
 const props = defineProps({
-  title: {
-    type: String,
-    required: true
-  },
-  date: {
+  id: {
     type: String,
     required: true
   },
   image: {
-    type: String,
-    required: true
-  },
-  description: {
     type: String,
     required: true
   },
@@ -25,22 +17,6 @@ const props = defineProps({
   site: {
     type: String,
     required: false
-  },
-  type: {
-    type: String,
-    required: true
-  },
-  tool: {
-    type: String,
-    required: true
-  },
-  lang: {
-    type: String,
-    required: true
-  },
-  access: {
-    type: String,
-    required: true
   }
 })
 
@@ -153,33 +129,33 @@ const toggleExpand = () => {
           <span
             class="bg-gray-100 min-h-8 text-gray-800 text-xs font-medium me-2 px-2.5 py-2 rounded-lg w-full lg:w-auto flex items-center justify-center"
             title="Project type"
-            >{{ type }}</span
+            >{{ $t(id + '.type') }}</span
           >
           <span
             class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-lg w-full lg:w-auto flex items-center justify-center"
             title="Tools and languages used for the project"
-            >{{ tool }}</span
+            >{{ $t(id + '.tool') }}</span
           >
           <span
             class="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-lg w-full lg:w-auto flex items-center justify-center"
             title="Language of the project"
-            >{{ lang }}</span
+            >{{ $t(id + '.lang') }}</span
           >
           <span
             class="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-lg w-full lg:w-auto flex items-center justify-center"
             title="Accessibility of the project"
-            >{{ access }}</span
+            >{{ $t(id + '.access') }}</span
           >
         </div>
 
         <div class="flex justify-between space-x-8">
           <div class="text-xl sm:text-2xl font-bold text-white">
-            {{ title }}
+            {{ $t(id + '.title') }}
             <hr class="w-1/2 md:border-[0.5] border-beige mt-4" />
           </div>
-          <time class="font-caveat font-medium text-orange-500">{{ date }}</time>
+          <time class="font-caveat font-medium text-orange-500">{{ $t(id + '.date') }}</time>
         </div>
-        <!-- Description avec système d'expansion -->
+        <!-- Description -->
         <div class="my-4">
           <div
             :class="[
@@ -187,10 +163,10 @@ const toggleExpand = () => {
               isExpanded ? 'max-h-none' : 'max-h-36'
             ]"
           >
-            {{ description }}
+            {{ $t(id + '.description') }}
           </div>
 
-          <!-- Bouton d'expansion -->
+          <!-- Expand button -->
           <button
             @click="toggleExpand"
             class="mt-2 text-sm text-blue-400 hover:text-blue-300 transition-colors duration-200 flex items-center"
