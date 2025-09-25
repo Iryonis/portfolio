@@ -1,5 +1,3 @@
-import { projectsImages } from '../ProjectsImages'
-
 export default {
   en: 'English',
   fr: 'French',
@@ -94,6 +92,16 @@ export default {
     tool: 'Vue, TypeScript & Tailwind v3',
     lang: 'English & French',
     access: 'Accessibility? Yes'
+  },
+  yatiuc: {
+    title: 'Is there a duck?',
+    date: 'February to April 2024',
+    description:
+      "This project 'Is there a duck?' is a project for the 'Software Development Project' course at the end of the third year of computer science, carried out by 3 people. It is a website with a Java backend, allowing users to post images and modify them using various image processing algorithms. The project uses a PostgreSQL database to store images, and the frontend is developed in Vue.js with Tailwind CSS. The goal of the project is to apply the skills acquired in programming, project management, and teamwork during the degree. Apart from the required content base, the rest was free. My group decided to create a humorous website about ducks. Due to the use of a PostgreSQL database from the University of Bordeaux, the site is not hosted online.",
+    type: 'Website with Java backend',
+    tool: 'Vue, Tailwind v3, Typescript, Java, Maven & PostgreSQL',
+    lang: 'French',
+    access: 'Accessibility? No'
   },
   ghg_viewer: {
     title: 'LaBRI GHG Viewer',

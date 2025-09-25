@@ -1,4 +1,4 @@
-import { projectsImages } from '@/assets/ProjectsImages'
+import { projectsImages } from '@/components/app/projects/ProjectsImages'
 
 export interface ProjectData {
   id: string
@@ -25,6 +25,12 @@ export const projectsData: ProjectData[] = [
     image: projectsImages.portfolio,
     github: 'https://github.com/Iryonis/portfolio',
     site: 'https://iryonis.github.io/portfolio/'
+  },
+  {
+    id: 'yatiuc',
+    image: projectsImages.yatiuc,
+    github: '',
+    site: ''
   },
   {
     id: 'ghg_viewer',

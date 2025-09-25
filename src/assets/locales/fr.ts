@@ -1,5 +1,3 @@
-import { projectsImages } from '../ProjectsImages'
-
 export default {
   en: 'Anglais',
   fr: 'Français',
@@ -93,6 +91,16 @@ export default {
     tool: 'Vue, TypeScript & Tailwind CSS',
     lang: 'Anglais & français',
     access: 'Accessibilité ? Oui'
+  },
+  yatiuc: {
+    title: 'Y a-t-il un canard ?',
+    date: 'Février à Avril 2024',
+    description:
+      "Le projet \"Y a-t-il un canard ?\" est un projet de l'UE \"Projet de développement logiciel\" en fin de L3 informatique, réalisé par 3 personnes. Il s'agit d'un site web avec un backend en Java, permettant aux utilisateurs de poster des images et de les modifier par divers algorithmes de gestion d'image. Le projet utilise une base de données PostgreSQL pour stocker les images, et le frontend est développé en Vue.js avec Tailwind CSS. Le but du projet est de mettre en pratique les compétences acquises en programmation, gestion de projet et travail en équipe au cours de la licence. À part la base de contenu demandé, le reste était libre. Mon groupe a donc décidé de créer un site web sur les canards, avec des touches d'humour. Due à l'utilisation d'une base de données PostgreSQL de l'université de Bordeaux, le site n'est pas hébergé en ligne.",
+    type: 'Site web avec backend Java',
+    tool: 'Vue, Tailwind v3, Typescript, Java, Maven & PostgreSQL',
+    lang: 'Français',
+    access: 'Accessibilité ? Non'
   },
   ghg_viewer: {
     title: 'LaBRI GHG Viewer',

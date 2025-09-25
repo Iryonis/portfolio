@@ -8,6 +8,7 @@
 import swytImg from '@/assets/img/projects/swyt.webp'
 import emhImg from '@/assets/img/projects/emh.webp'
 import portfolioImg from '@/assets/img/projects/portfolio.webp'
+import yatiucImg from '@/assets/img/projects/yatiuc.webp'
 import ghgViewerImg from '@/assets/img/projects/ghg_viewer.webp'
 import takuzuWebImg from '@/assets/img/projects/takuzu_web.webp'
 import takuzuDesktopImg from '@/assets/img/projects/takuzu_desktop.webp'
@@ -20,6 +21,7 @@ export const projectsImages = {
   swyt: swytImg,
   emh: emhImg,
   portfolio: portfolioImg,
+  yatiuc: yatiucImg,
   ghgViewer: ghgViewerImg,
   takuzuWeb: takuzuWebImg,
   takuzuDesktop: takuzuDesktopImg,
