@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 
-const _ = defineProps({
+const props = defineProps({
   title: {
     type: String,
     required: true
@@ -45,6 +45,49 @@ const _ = defineProps({
 })
 
 const isExpanded = ref(false)
+const isImageLoaded = ref(false)
+const projectRef = ref<HTMLElement>()
+const shouldLoadImage = ref(false)
+let observer: IntersectionObserver | null = null
+
+/**
+ * Initialize Intersection Observer to lazy load images when they enter the viewport
+ */
+onMounted(() => {
+  if (!projectRef.value) return
+
+  observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !shouldLoadImage.value) {
+          shouldLoadImage.value = true
+          // Unobserve after loading the image
+          observer?.unobserve(entry.target)
+        }
+      })
+    },
+    {
+      // Load the image a bit before it enters the viewport (50 px)
+      rootMargin: '50px 0px',
+      threshold: 0.1
+    }
+  )
+
+  observer.observe(projectRef.value)
+})
+
+onUnmounted(() => {
+  if (observer && projectRef.value) {
+    observer.unobserve(projectRef.value)
+  }
+})
+
+/**
+ * Manage the image load state to show a placeholder while loading
+ */
+const handleImageLoad = () => {
+  isImageLoaded.value = true
+}
 
 /**
  * Toggle the expansion state of the project description
@@ -56,28 +99,50 @@ const toggleExpand = () => {
 
 <template>
   <!-- Card -->
-  <div class="w-full flex flex-col">
+  <div ref="projectRef" class="w-full flex flex-col">
     <div class="bg-white/5 border-beige rounded border-2 shadow-lg shadow-black/50">
-      <!-- If Website -->
-      <a
-        v-if="site && site.includes('http')"
-        :href="site"
-        target="_blank"
-        rel="noopener noreferrer"
-        title="Link to the project website"
-        aria-label="Link to the project website."
-        class="flex justify-center items-center w-full bg-beige"
+      <div
+        class="flex justify-center items-center max-h-80 bg-beige/5 border-b-2 border-beige overflow-hidden"
       >
+        <!-- Placeholder while image loads -->
+        <div
+          v-show="!isImageLoaded"
+          class="w-full h-60 flex items-center justify-center animate-pulse bg-beige/20"
+        >
+          <svg
+            class="w-10 h-10 text-gray-200 dark:text-gray-600"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 18"
+          >
+            <path
+              d="M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z"
+            />
+          </svg>
+        </div>
+
+        <!-- If Website -->
+        <a
+          v-if="site && site.includes('http') && shouldLoadImage"
+          :href="site"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Link to the project website"
+          aria-label="Link to the project website."
+        >
+          <img
+            :src="image"
+            @load="handleImageLoad"
+            aria-label="'An image representing the project, click on it to open the project website.'"
+            class="hover:scale-95 max-h-60 transition-all duration-500 ease-in-out"
+          />
+        </a>
+        <!-- Else -->
         <img
+          v-else-if="shouldLoadImage"
           :src="image"
-          aria-label="An image representing the project, click on it to open the project website."
-          class="hover:scale-95 transition-all max-h-60 duration-500 ease-in-out"
-        />
-      </a>
-      <!-- Else -->
-      <div v-else class="flex justify-center items-center w-full bg-beige">
-        <img
-          :src="image"
+          @load="handleImageLoad"
           aria-label="An image representing the project."
           class="cursor-default max-h-60 hover:max-h-80 transition-all duration-1000 ease-in-out"
         />
