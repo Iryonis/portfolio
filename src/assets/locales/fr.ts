@@ -116,7 +116,7 @@ export default {
     title: 'Takuzu, version site web',
     date: 'De mars à juin 2023',
     description:
-      "Takuzu est un projet réalisé par quatre étudiants lors de leur deuxième année en informatique. L'objectif était de créer un site web permettant à l'utilisateur de jouer au jeu Takuzu (également connu sous le nom de Unruly ou Binairo), codé précédemment en C. Il s'agit de la troisième partie du projet (après les versions en terminal et en interface graphique). J'ai codé la majeure partie du site web, et c'était la première fois que je mettais en place un mode nuit fait maison.",
+      "Takuzu est un projet réalisé par moi et trois amis lors de notre deuxième année en informatique. L'objectif était de créer un site web permettant à l'utilisateur de jouer au jeu Takuzu (également connu sous le nom de Unruly ou Binairo), codé précédemment en C. Il s'agit de la troisième partie du projet (après les versions en terminal et en interface graphique). J'ai codé la majeure partie du site web, et c'était la première fois que je mettais en place un mode nuit fait maison.",
     type: 'Jeu vidéo sur site web',
     tool: 'HTML, CSS & JavaScript',
     lang: 'Anglais',
@@ -126,7 +126,7 @@ export default {
     title: 'Takuzu, version bureau',
     date: 'De septembre 2022 à mars 2023',
     description:
-      "Takuzu est un projet réalisé par quatre étudiants lors de leur deuxième année en informatique. L'objectif était de créer le jeu Takuzu (également connu sous le nom de Unruly ou Binairo) en utilisant le langage C, et d'explorer les bibliothèques et outils utilisés dans le développement de projets. Il s'agit des première et deuxième parties du projet, que l'on peut résumer comme étant 'jeu en terminal' et 'jeu avec interface graphique'. L'interface graphique a été réalisée avec un thème Le Seigneur des Anneaux en tête, et tous les assets graphiques ont été faits à la main par un ami (sauf le fond).",
+      "Takuzu est un projet réalisé par moi et trois amis lors de notre deuxième année en informatique. L'objectif était de créer le jeu Takuzu (également connu sous le nom de Unruly ou Binairo) en utilisant le langage C, et d'explorer les bibliothèques et outils utilisés dans le développement de projets. Il s'agit des première et deuxième parties du projet, que l'on peut résumer comme étant 'jeu en terminal' et 'jeu avec interface graphique'. L'interface graphique a été réalisée avec un thème Le Seigneur des Anneaux en tête, et tous les assets graphiques ont été faits à la main par un ami (sauf le fond).",
     type: 'Jeu vidéo sur ordinateur',
     tool: 'C, Cmake & SDL2',
     lang: 'Anglais',
@@ -136,7 +136,7 @@ export default {
     title: 'NDI2023',
     date: '7 et 8 décembre 2023',
     description:
-      "Site web réalisé pour la Nuit de l'Info 2023, par l'équipe \"Gragas 404 Not Found\". La Nuit de l'Info est un événement annuel organisé en décembre dans les universités françaises qui dure une nuit et où le but est de coder un site web avec des défis, de s'amuser et de rencontrer des entreprises. Le sujet de cette année était \"Faire face au changement climatique : le vrai du faux\", et était parrainé par l'association Réseau Action Climat.",
+      "Site web réalisé pour la Nuit de l'Info 2023, par l'équipe \"Gragas 404 Not Found\" (4 membres). La Nuit de l'Info est un événement annuel organisé en décembre dans les universités françaises qui dure une nuit et où le but est de coder un site web avec des défis, de s'amuser et de rencontrer des entreprises. Le sujet de cette année était \"Faire face au changement climatique : le vrai du faux\", et était parrainé par l'association Réseau Action Climat. Nous avons profité de l'occasion pour découvrir le framework Angular qu'aucun de nous ne connaissait, et pour essayer de nous répartir les tâches de manière efficace. Souhaitant développer tout par nous-même, nous n'avons pas eu le temps de tout finir et nous n'avons rien gagné.",
     type: 'Site web',
     tool: 'Angular',
     lang: 'Français',
@@ -146,7 +146,7 @@ export default {
     title: 'UBGarden',
     date: 'Mai à Juin 2023',
     description:
-      "UBGarden est un projet Java réalisé en deuxième année d'informatique à l'Université de Bordeaux, lors de l'Unité d'Enseignement (UE) Programmation Orientée Objet. Il consista à créer un petit jeu vidéo 2D type \"Zelda\", à partir d'un code de base fourni. Il fut précédé de plusieurs semaines de tutoriaux pour apprendre à développer en Java et à utiliser IntelliJ Idea et Gradle, et a duré quelques semaines. Ce projet fut notre première approche de Java et de la Programmation Orientée Objet.",
+      "UBGarden est un projet Java réalisé en deuxième année d'informatique à l'Université de Bordeaux, lors de l'Unité d'Enseignement (UE) Programmation Orientée Objet. Il consista à créer un petit jeu vidéo 2D type \"Zelda\", à partir d'un code de base fourni par le professeur. Il fut précédé de plusieurs semaines de tutoriaux pour apprendre à développer en Java et à utiliser IntelliJ Idea et Gradle, et a duré quelques semaines. Ce projet fut notre première approche de Java et de la Programmation Orientée Objet.",
     type: 'Jeu vidéo sur ordinateur',
     tool: 'Java, Gradle & IntelliJ Idea',
     lang: 'Français',
@@ -156,7 +156,7 @@ export default {
     title: 'Wiki For Honor',
     date: 'Décembre 2022',
     description:
-      "WikiFH (pour 'Wiki For Honor') est un site web créé par un étudiant en informatique durant sa deuxième année à l'université. C'était un petit projet visant à enseigner aux étudiants comment créer un site web avec des technologies de base telles que HTML, CSS, Javascript et PHP. J'ai décidé de créer un site web en l'honneur de For Honor, un jeu créé par Ubisoft, que j'aime beaucoup. Sa réalisation est très basique, mais c'était le premier site web sérieux que j'ai réalisé.",
+      "WikiFH (pour 'Wiki For Honor') est un site web que j'ai créé au début de ma deuxième année à l'université. C'était un petit projet visant à enseigner aux étudiants comment créer un site web avec des technologies de base telles que HTML, CSS, Javascript et PHP. J'avais donc décidé de créer un site web en l'honneur de For Honor, un jeu créé par Ubisoft, que j'aimais beaucoup. Sa réalisation est très basique, mais c'était le premier site web sérieux que j'ai réalisé, et qui m'a fait découvrir mon amour pour le web.",
     type: 'Site web',
     tool: 'HTML, CSS, JavaScript & PHP',
     lang: 'Français',
