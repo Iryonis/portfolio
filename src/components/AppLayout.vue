@@ -2,6 +2,7 @@
 import Sidebar from './Sidebar.vue'
 import Navbar from './Navbar.vue'
 import NextButton from './NextButton.vue'
+import ToolsBar from './ToolsBar.vue'
 
 import { useRoute } from 'vue-router'
 
@@ -20,6 +21,7 @@ const isAboutPage = () => {
     <div class="block m-8 mt-16 md:hidden"><Navbar /></div>
     <div class="hidden md:block md:col-span-1"><Sidebar /></div>
     <RouterView />
+    <ToolsBar />
   </div>
   <div class="mb-24"><NextButton v-if="isAboutPage()" destination="/app/projects" /></div>
 </template>

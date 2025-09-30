@@ -43,8 +43,8 @@ onMounted(() => {
       })
     },
     {
-      // Load the image a bit before it enters the viewport (50 px)
-      rootMargin: '50px 0px',
+      // Load the image a bit before it enters the viewport (200 px)
+      rootMargin: '200px 0px',
       threshold: 0.1
     }
   )

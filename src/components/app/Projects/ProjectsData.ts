@@ -1,4 +1,4 @@
-import { projectsImages } from '@/components/app/projects/ProjectsImages'
+import { projectsImages } from '@/components/app/Projects/ProjectsImages'
 
 export interface ProjectData {
   id: string

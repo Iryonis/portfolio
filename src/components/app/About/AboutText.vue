@@ -2,8 +2,8 @@
 import githubImage from '@/assets/img/logo/github.svg'
 import linkedinImage from '@/assets/img/logo/linkedin.webp'
 import mailImage from '@/assets/img/logo/gmail.webp'
-import SunflowerIcon from '@/components/app/about/SVG/SunflowerIcon.vue'
-import PlantIcon from '@/components/app/about/SVG/PlantIcon.vue'
+import SunflowerIcon from '@/components/app/About/SVG/SunflowerIcon.vue'
+import PlantIcon from '@/components/app/About/SVG/PlantIcon.vue'
 import { ref } from 'vue'
 
 let isCopied = ref(false)

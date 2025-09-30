@@ -1,13 +1,10 @@
 <script setup lang="ts">
-import { RouterView, useRoute } from 'vue-router'
-import LangToggle from './components/LangToggle.vue'
-
-const route = useRoute()
+import { RouterView } from 'vue-router'
 </script>
 
 <template>
   <div class="min-w-screen min-h-screen flex flex-col justify-center items-center">
-    <LangToggle v-if="route.name !== 'home'" /> <RouterView />
+    <RouterView />
   </div>
 </template>
 

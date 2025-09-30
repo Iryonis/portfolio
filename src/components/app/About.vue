@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import AboutText from './about/AboutText.vue'
+import AboutText from './About/AboutText.vue'
 import Skills from './Skills/Skills.vue'
-import Career from './about/Career.vue'
+import Career from './About/Career.vue'
 
 let about = ref(true)
 let about_animation = ref(true)

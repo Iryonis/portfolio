@@ -166,7 +166,7 @@ export default {
     title: 'VideoTracker',
     date: 'Avril 2022',
     description:
-      "Videotracker est un projet Python développé par deux étudiants lors de leur première année d'études en informatique. Il respecte un ensemble de spécifications incluant des exigences telles que l'affichage de vidéo, la pause, la navigation image par image, le dessin de points sur la vidéo et la création d'un fichier CSV pour montrer l'évolution de ces points. Le projet a été réalisé en suivant les méthodologies SCRUM, visant à familiariser les étudiants avec les principes de gestion de projet agile.",
+      "Videotracker est un projet Python développé par un ami et moi lors de notre première année d'études en informatique. Il respecte un ensemble de spécifications incluant des exigences telles que l'affichage de vidéo, la pause, la navigation image par image, le dessin de points sur la vidéo et la création d'un fichier CSV pour montrer l'évolution de ces points. Le projet a été réalisé en suivant la méthodologie de gestion de projet agile SCRUM, avec des 'réunions régulières' avec notre chargé de TD pour discuter de l'avancement du projet et des obstacles rencontrés. Ce fut un projet très enrichissant, car il m'a permis de découvrir très tôt la gestion de projet et le langage Python.",
     type: 'Application de bureau',
     tool: 'Python',
     lang: 'Français',

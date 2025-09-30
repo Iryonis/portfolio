@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Project from './projects/Project.vue'
-import { projectsData } from './projects/ProjectsData'
+import Project from './Projects/Project.vue'
+import { projectsData } from './Projects/ProjectsData'
 
 const projects = projectsData
 </script>
